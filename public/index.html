@@ -25,6 +25,13 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +46,24 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      $(document).ready(() => {
+        var f;
+        $(".tticons").mouseenter((e) => {
+          var f = e.target.children;
+          $(f[0]).addClass("icon-hover");
+          $(f[1]).removeClass("ttheading");
+          $(f[0]).removeClass("icon");
+          $(f[1]).addClass("ttheading-hover");
+        });
+        $(".tticons").mouseleave((e) => {
+          var f = e.target.children;
+          $(f).removeClass("icon-hover");
+          $(f).removeClass("ttheading-hover");
+          $(f[1]).addClass("ttheading");
+          $(f[0]).addClass("icon");
+        });
+      });
+    </script>
   </body>
 </html>

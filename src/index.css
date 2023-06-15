@@ -1,13 +1,120 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {}
+
+@layer components {
+    .header{
+        @apply md:h-14 lg:h-8 lg:bg-gray-300
+    }
+    .header .faIcons{
+        @apply h-6 p-4 md:h-5 md:p-3 hover:-translate-y-[0.10rem] hover:h-[1.15rem] 
+    }
+    .header .page-links{
+        @apply space-x-1 sm:space-x-2 md:space-x-1 lg:space-x-0
+    }
+
+    .landing-page{
+        @apply h-[20rem] 
+        xss:h-[26rem]
+        xsm:h-[28rem] 
+        lg:h-[32rem] lg:max-h-[32rem] 
+        min-h-[15rem] 
+        flex justify-evenly items-center 
+        z-40 
+        overflow-hidden 
+        relative top-14
+        bg-gradient-to-r from-slate-950 to-black
+    }
+    .landing-page .landingDesc{
+        @apply text-white z-40 p-8
+        w-[21rem]
+        xss:w-[23rem]
+        xsm:w-[25rem]
+        md:w-[26rem]
+        lg:w-[30rem]
+        xl:w-[34rem]
+        space-y-1
+    }
+    .landing-page .desc-heading{
+        @apply font-bold font-serif text-orange-500
+        text-[.9rem]
+        xss:text-[1.5rem]
+        xsm:text-[2rem]
+        sm:text-[2.3rem]
+        md:text-[3rem]
+        lg:text-[3.7rem]
+    }
+    .landing-page .desc-para{
+        @apply font-thin font-serif
+        text-[.6rem]
+        xss:text-[1rem]
+        xsm:text-[1.2rem]
+        sm:text-[1.5rem]
+        md:text-[2.0rem]
+        lg:text-[2.3rem]
+    }
+    .landing-page .landingImg{
+        @apply 
+        w-[15rem] h-[8rem]
+        xss:w-[18rem] xss:h-[12rem]
+        xsm:w-[20rem] xsm:h-[13rem]
+        sm:w-[21rem] sm:h-[13rem]
+        md:w-[23rem] md:h-[15rem]
+        lg:w-[25rem] lg:h-[17rem]
+        xl:w-[28rem] xl:h-[19rem]
+        2xl:w-[32rem] 2xl:h-[21rem]
+    }
+
+    .ttnavigation {
+        @apply flex justify-center m-2 space-x-1
+        xss:flex xss:justify-center xss:space-x-2 xss:m-6
+        sm:space-x-1
+    }
+
+    .ttnavigation .tticons{
+        @apply text-center 
+        flex-wrap w-[3.5rem] text-[0.5rem] space-x-[.5rem]
+        xss:flex-wrap xss:w-[4rem] xss:text-xs xss:space-x-[.15rem]
+        xsm:w-[6rem] xsm:text-sm xsm:p-0 xsm:font-normal xsm:space-x-1 xsm:flex-nowrap
+        sm:w-[8rem] sm:text-base sm:p-1 sm:font-medium sm:space-x-1
+        md:w-[10rem] md:text-lg md:p-2 md:font-semibold md:space-x-2
+        border-2
+        hover:underline underline-offset-2 
+    }
+
+    .ttoutlet {
+        @apply border border-black 
+        text-center p-4 max-h-max m-4 rounded-lg
+        bg-gradient-to-l from-cyan-50 to-blue-300
+        shadow-lg shadow-slate-400
+    }
+
+    .ToolLanguages, .ToolTechs {
+        @apply flex flex-wrap justify-center space-x-2 w-auto h-auto m-2 
+        xxs:space-x-8 
+        xsm:space-x-4 
+    } 
+    .ToolDatabase {
+        @apply flex justify-center space-x-6 w-auto h-auto overflow-hidden m-2 
+        xxs:space-x-8 
+        xsm:space-x-4
+        sm:space-x-8
+    }
+    .ToolDevelopment {
+        @apply flex flex-wrap justify-center space-x-2 w-auto h-auto max-h-max m-2 
+        xxs:space-x-8 
+        xsm:space-x-4
+    }
+    .ToolsImg{
+        @apply max-w-[4rem] max-h-[3.5rem] m-[.15rem]
+        xxs:max-w-[4.5rem]
+        xsm:max-w-[5.2rem] xsm:max-h-[4.3rem] xsm:p-1
+        md:max-w-[6rem] md:max-h-[4.8rem]
+        lg:max-w-[8rem] lg:max-h-[6rem]
+        outline-2 outline-black
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@layer utilities {}
