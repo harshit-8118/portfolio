@@ -4,6 +4,7 @@ import ToolTechnology from '../components/ToolTechnology'
 import Projects from '../components/Projects'
 import Footer from '../components/Footer'
 import Achievements from '../components/Achievements'
+import SemsterCard from '../components/SemsterCard'
 
 function Home() {
   return (
@@ -22,6 +23,10 @@ function Home() {
           <span className='text-red-800'>A</span>chievements
         </div>
         <Achievements />
+        <div id='achievements' className='my-8 m-2 text-center text-lg font-bold'>
+          <span className='text-red-800'>S</span>emster
+        </div>
+        <SemsterCard />
         <Footer />
     </div>
   )

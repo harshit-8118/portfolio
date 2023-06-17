@@ -23,6 +23,9 @@ export const codechef = require('./platform-images/codechef.png')
 export const codeforces = require('./platform-images/codeforces.png')
 export const atcoder = require('./platform-images/atcoder.png')
 
+//oops image
+export const oops = require('./platform-images/oops.jpg')
+
 export const img1 = require('./images2/1.avif');
 export const img2 = require('./images2/2.avif');
 export const img3 = require('./images2/3.avif');

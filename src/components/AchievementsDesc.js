@@ -64,11 +64,11 @@ export const achievements = [
 ]
 
 export const semesterAchievements = {
-    sem1: '',
-    sem2: '',
-    sem3: '',
-    sem4: '',
-    sem5: '',
+    sem1: '8.80',
+    sem2: '8.90',
+    sem3: '9.14',
+    sem4: '8.57',
+    sem5: '8.45',
     sem6: '',
     sem7: '',
     sem8: '',

@@ -24,7 +24,7 @@ function Projects() {
     <>
       <span
         id="popupclose"
-        className={`bg-stone-500 w-8 h-8 pt-1 text-center cursor-pointer top-20 rounded-full z-40 right-8 fixed ${hidden} lg:right-32 xl:right-60 2xl:right-96 text-white hover:bg-slate-900`}
+        className={`bg-stone-500 w-8 h-8 pt-1 text-center cursor-pointer top-28 rounded-full z-40 right-8 fixed ${hidden} lg:right-32 xl:right-60 2xl:right-96 text-white hover:bg-slate-900`}
         onClick={popOpen}
       >
         <FA icon={faXmark} className="scale-125" />
