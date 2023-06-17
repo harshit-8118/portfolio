@@ -13,7 +13,7 @@ import TlToolsTechs from "./components/TlToolsTechs";
 
 function App() {
   return (
-    <div className="relative">
+    <div className="relative min-w-[17rem]">
       <BrowserRouter>
         <Header />
         <Routes>

@@ -30,6 +30,9 @@
         margin: 0;
         padding: 0;
       }
+      ::-webkit-scrollbar {
+        width: 0px;
+      }
     </style>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   </head>
@@ -48,22 +51,7 @@
     -->
     <script>
       $(document).ready(() => {
-        var f;
-        $(".tticons").mouseenter((e) => {
-          var f = e.target.children;
-          $(f[0]).addClass("icon-hover");
-          $(f[1]).removeClass("ttheading");
-          $(f[0]).removeClass("icon");
-          $(f[1]).addClass("ttheading-hover");
         });
-        $(".tticons").mouseleave((e) => {
-          var f = e.target.children;
-          $(f).removeClass("icon-hover");
-          $(f).removeClass("ttheading-hover");
-          $(f[1]).addClass("ttheading");
-          $(f[0]).addClass("icon");
-        });
-      });
     </script>
   </body>
 </html>

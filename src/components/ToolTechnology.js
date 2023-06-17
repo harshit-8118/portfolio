@@ -14,7 +14,7 @@ import {
 function ToolTechnology() {
   return (
     <>
-      <ul className="ttnavigation">
+      <ul id="ttnavigation" className="ttnavigation">
         <Link to={""} className="tticons flex justify-center space-x-4">
           <p className="icon">
             <FA icon={faLanguage} />
