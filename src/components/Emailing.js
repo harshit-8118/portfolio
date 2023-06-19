@@ -23,12 +23,12 @@ const Emailing = () => {
   };
 
   return (
-    <>
+    <div className="border-2 border-green-700 w-[70%] mx-auto xxs:w-[55%] xss:w-[50%] md:w-[40%] my-[4rem] pt-5 p-1 rounded-lg">
       <ContactForm ref={FormRef} />
       {/* check on higher need, very-limited-email-options. */}
       {/* 
         <input
-        className=""
+        className="m-1 my-2 bg-blue-500 p-4 text-white uppercase font-bold tracking-widest block border rounded-lg w-[99%]"
         type="submit"
         value="Submit"
         onClick={(e) => {
@@ -37,15 +37,16 @@ const Emailing = () => {
         }}
       /> */}
       <input
-        className=""
+        className="m-1 my-2 bg-blue-500 p-4 text-white uppercase font-bold tracking-widest block border rounded-lg w-[99%]"
         type="submit"
         value="Submit"
         onClick={(e) => {
           e.preventDefault();
+          alert('form submitted')
           console.log(FormRef.current);
         }}
       />
-    </>
+    </div>
   );
 };
 

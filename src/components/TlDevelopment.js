@@ -1,23 +1,25 @@
 import React from "react";
-import {
-  html,
-  css,
-  bootstrap,
-  react,
-  express,
-  nodejs,
-  jquery,
-  tailwind,
-} from "../assets/Img/images";
-
-const images = [html, css, bootstrap, tailwind, react, express, nodejs, jquery];
+const webTechs = [
+  "html",
+  "css",
+  "javascript",
+  "bootstrap",
+  "react",
+  "express",
+  "nodejs",
+  "jquery",
+  "tailwind",
+];
 
 function TlDevelopment() {
   return (
     <div className="ToolDevelopment">
-      {images.map((img) => (
-        <img key={img} className="ToolsImg" src={img} alt="htmlImg.png" />
-      ))}
+      <h1 className="text-base xxs:text-xl group-hover:text-[#004b4b] font-bold">WEB TECHNOLOGIES</h1>
+      <div data-aos='zoom-in' data-aos-duration="400" className="flex justify-center space-x-4 xxs:space-x-14 text-lg flex-wrap leading-10">
+        {webTechs.map((techs, ind) => (
+          <li className="text-sm xxs:text-base group-hover:underline underline-offset-4 decoration-[#055959]" key={ind}>{techs}</li>
+        ))}
+      </div>
     </div>
   );
 }

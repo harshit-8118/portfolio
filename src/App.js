@@ -13,16 +13,16 @@ import TlToolsTechs from "./components/TlToolsTechs";
 
 function App() {
   return (
-    <div className="relative min-w-[17rem]">
+    <div className="">
       <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Home />}>
-            <Route path="/" element={<TlLanguage />} />
+            <Route path="home/languages" element={<TlLanguage />} />
             <Route path="home/dev-techs" element={<TlDevelopment />} />
             <Route path="home/dbs-techs" element={<TlDatabase />} />
             <Route path="home/tools" element={<TlTools />} />
-            <Route path="home/tools-techs" element={<TlToolsTechs />} />
+            <Route path="/" element={<TlToolsTechs />} />
           </Route>
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

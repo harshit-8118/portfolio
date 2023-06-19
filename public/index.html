@@ -30,13 +30,28 @@
         margin: 0;
         padding: 0;
       }
+      body{
+        min-width: 17rem;
+      }
       ::-webkit-scrollbar {
-        width: 0px;
+        width: 8px;
+      }
+      ::-webkit-scrollbar-thumb{
+        background-color: gray;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover{
+        background-color: rgb(106, 102, 102);
+      }
+      ::-webkit-scrollbar-track{
+        /* background-color: rgb(201, 202, 202); */
+        background-color: #055959;
+        border-radius: 20px;
       }
     </style>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   </head>
-  <body>
+  <body onscroll="func()">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -49,9 +64,25 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script>
-      $(document).ready(() => {
-        });
+    <script> 
+    const func = ()=>{
+      var header = document.getElementById('header');
+      var faIcons = document.querySelectorAll('.faIcons');
+      faIcons.forEach(icon => {
+        icon.style.color = '#055959';
+      })
+      header.style.height = '4rem'
+      header.style.backgroundColor = '#f2f2f2';
+      var land = document.getElementById('landingpage');
+      if(window.scrollY < 50){
+        header.style.backgroundColor = '#46AEA2'
+        faIcons.forEach(icon => {
+          icon.style.color = '#1D2026';
+        })
+        header.style.height = '8rem'
+      }
+
+    }
     </script>
   </body>
 </html>

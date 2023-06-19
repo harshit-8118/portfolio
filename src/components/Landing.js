@@ -1,24 +1,25 @@
 import React from "react";
 import Header from "./Header";
+import Animate from "./Animate";
+
+const name = "HARSHIT";
+const specimen = 'A coder and web developer'
+
 
 function Landing() {
   return (
-    <>
-    <div className="landing-page ">
+    <div className="">
+    <div id="landingpage" className="relative top-24 landing-page w-[100%] min-w-[10rem]"> 
       <div className="landingDesc">
-        <div className="desc-heading">
-          Hi, <br />
-          I am Harshit
+        <div className="desc-heading" data-aos="fade-in" data-aos-duration="200">
+          Hi, I am <Animate Name={name} jump={100} offset={120} duration={900}/>
         </div>
-        <div className="desc-para">
-            Coder & Web Developer
+        <div className="desc-para" data-aos="fade-up" data-aos-duration="200" data-aos-offset="70">
+          <Animate Name={specimen} jump={50} offset={100} duration={700} />
         </div>
-      </div>
-      <div className="landingImg max-w-max min-w-min scale-150">
-        <img src="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80" />
       </div>
     </div>
-    </>
+    </div>
   );
 }
 

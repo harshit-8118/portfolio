@@ -10,7 +10,8 @@ const ContactForm = forwardRef((props, ref) => {
   const [sender, setSender] = useState(InitialSender);
 
   return (
-    <form ref={ref} className="">
+    <form ref={ref} id="form" className="form flex flex-col mx-auto">
+      <h1 className="mx-auto text-xl font-bold m-1 my-2 sm:text-4xl">Drop me a line..</h1>
       <input
         className=""
         type="text"
@@ -27,7 +28,7 @@ const ContactForm = forwardRef((props, ref) => {
         placeholder="Email"
         onChange={(e) => setSender({ ...sender, email: e.target.value })}
         />
-      <input
+      <textarea
         className=""
         type="text"
         name="sender_message"

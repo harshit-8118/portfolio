@@ -14,6 +14,7 @@ export const jquery = require('./images/jquery.png')
 export const express = require('./images/express.png')
 export const bootstrap = require('./images/bootstrap.png')
 export const vscode = require('./images/vscode.png')
+export const myphoto = require('./images/myphoto.jpg')
 
 // achievements images
 export const leetcode = require('./platform-images/leetcode.png')

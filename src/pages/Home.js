@@ -1,35 +1,34 @@
-import React from 'react'
-import Landing from '../components/Landing'
-import ToolTechnology from '../components/ToolTechnology'
-import Projects from '../components/Projects'
-import Footer from '../components/Footer'
-import Achievements from '../components/Achievements'
-import SemsterCard from '../components/SemsterCard'
-
+import React from "react";
+import Landing from "../components/Landing";
+import ToolTechnology from "../components/ToolTechnology";
+import Projects from "../components/Projects";
+import Footer from "../components/Footer";
+import Achievements from "../components/Achievements";
+import SemsterCard from "../components/SemsterCard";
+import Underline from "../components/Underline";
 function Home() {
   return (
-    <div id='top'>
-        <Landing />
-        <div id='' className="h-14"></div>
-        <div id='skills' className='my-8 m-2 text-center text-lg font-bold'>
-          <span className='text-red-800'>S</span>kills
-        </div>
+    <div id="top" className="overflow-hidden w-[100%]">
+      <div className="w-[100%]">
+      <Landing />
+      </div>
+     <div className="h-[6rem]"></div>
+      <Underline />
+      <div id="skills-toolTechs" className="">
         <ToolTechnology />
-        <div id='projects' className='my-8 m-2 text-center text-lg font-bold'>
-          <span className='text-red-800'>P</span>rojects
-        </div>
-        <Projects />
-        <div id='achievements' className='my-8 m-2 text-center text-lg font-bold'>
-          <span className='text-red-800'>A</span>chievements
-        </div>
-        <Achievements />
-        <div id='achievements' className='my-8 m-2 text-center text-lg font-bold'>
-          <span className='text-red-800'>S</span>emster
-        </div>
-        <SemsterCard />
-        <Footer />
+      </div>
+       <Underline />
+      <div className="">
+      <Projects />
+      </div>
+      <Underline />
+      <Achievements />
+      <div className="-mt-16"></div>
+      <Underline />
+      <SemsterCard />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

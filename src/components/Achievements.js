@@ -1,5 +1,5 @@
-import React from "react";
-import {achievements} from "./AchievementsDesc";
+import React, { useState } from "react";
+import { achievements } from "./AchievementsDesc";
 import { FontAwesomeIcon as FA } from "@fortawesome/react-fontawesome";
 import {
   faArrowUpRightFromSquare,
@@ -17,52 +17,88 @@ function Achievements() {
       .slice(0, -1);
   };
   return (
-    <div id="achievementContainer">
-      {achievements.map((achievement) => (
-        <div key={achievement.key} className="achiCard group">
-          <div className="achiImg">
-            <a target="_blank" href={achievement.link}><img src={achievement.img} /></a>
-          </div>
-          <div className="achiLower group-hover:border-transparent">
-            <div className="achiPlatform group-hover:bg-slate-500 group-hover:text-white h-8">{achievement.platform}</div>
-            <div className="achiId p-1 flex space-x-4 group-hover:bg-slate-300 h-8">
-              <span className="group-hover:text-sm underline-offset-4 group-hover:underline">{achievement.id}</span>
-              <a target="_blank" href={achievement.link} className="group-hover:text-blue-700 group-hover:text-base">
-                <FA icon={faArrowUpRightFromSquare} />
-              </a>
-            </div>
-            <div className="achiProbSolve p-1 flex space-x-4 group-hover:text-black group-hover:bg-slate-300 h-8">
-              <h1>Problems Solved : </h1>
-              <p className="oldstyle-nums font-semibold text-slate-800 tracking-widest group-hover:text-base">{achievement.problem_solved}</p>
-            </div>
-            <div className="achiProbSolve p-1 flex space-x-4 group-hover:bg-slate-300 h-8">
-              <h1>Maximum Rating : </h1>
-              <p className="oldstyle-nums font-semibold text-slate-800 tracking-widest group-hover:text-base">
-                {achievement.max_rating.replaceJSXfunc(
-                  "-",
-                  <FA
-                    key={achievement.id}
-                    icon={faXmark}
-                    className="text-red-600"
-                  />
-                )}
-              </p>
-            </div>
-            <div className="achiOther group-hover:bg-slate-300 list-none">
-              {achievement.other &&
-                achievement.other.map((achives, ind) => (
-                  <li key={ind}>
-                    <FA icon={faCheck} className="px-2 group-hover:text-yellow-600" />
-                    {achives.replaceJSXfunc(
-                      "*",
-                      <FA key={ind} icon={faStar} className="text-yellow-500" />
+    <div id="achievements" className="w-full overflow-hidden">
+      <div
+        id="projects"
+        data-aos="fade-up"
+        className="flex flex-col text-center xss:text-3xl font-bold tracking-[0.5rem] py-8 "
+      >
+        MY ACHIEVEMENTS...
+      </div>
+      <div className="font-normal tracking-normal text-sm text-center">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam culpa
+        repellat vel quasi, inventore in itaque corrupti
+      </div>
+      <div id="achievementContainer">
+        {achievements.map((achievement, index) => (
+          <>
+            <div key={achievement.key} data-aos-duration="300" data-aos={index%2 ? 'fade-left': 'fade-right'} className={index%2 == 0? 'achiCard group lg:pr-[24rem] md:pr-[18rem] sm:pr-[10rem]': 'achiCard group lg:pl-[24rem] md:pl-[18rem] sm:pl-[10rem]'}>
+              <div className={index%2 == 0?`achiImg`:`achiImg hidden`}>
+                <a target="_blank" href={achievement.link}>
+                  <img src={achievement.img} />
+                </a>
+              </div>
+              <div className="achiLower group-hover:border-transparent">
+                <div className="achiPlatform h-8">{achievement.platform}</div>
+                <div className="achiId p-1 flex space-x-4 h-8 mx-auto">
+                  <span className="">{achievement.id}</span>
+                  <a
+                    target="_blank"
+                    href={achievement.link}
+                    className="group-hover:text-blue-700 group-hover:text-lg"
+                  >
+                    <FA icon={faArrowUpRightFromSquare} />
+                  </a>
+                </div>
+                <div className="achiProbSolve p-1 flex space-x-4 h-8 mx-auto">
+                  <h1>Problems Solved : </h1>
+                  <p className="oldstyle-nums font-semibold text-slate-800 tracking-widest">
+                    {achievement.problem_solved}
+                  </p>
+                </div>
+                <div className="achiProbSolve p-1 flex space-x-4 h-8 mx-auto">
+                  <h1>Maximum Rating : </h1>
+                  <p className="oldstyle-nums font-semibold text-slate-800 tracking-widest">
+                    {achievement.max_rating.replaceJSXfunc(
+                      "-",
+                      <FA
+                        key={achievement.id}
+                        icon={faXmark}
+                        className="text-red-600"
+                      />
                     )}
-                  </li>
-                ))}
+                  </p>
+                </div>
+                <div className="achiOther list-none mx-auto">
+                  {achievement.other &&
+                    achievement.other.map((achives, ind) => (
+                      <li key={ind}>
+                        <FA
+                          icon={faCheck}
+                          className="px-2 group-hover:text-yellow-600 group-hover:text-lg"
+                        />
+                        {achives.replaceJSXfunc(
+                          "*",
+                          <FA
+                            key={ind}
+                            icon={faStar}
+                            className="text-yellow-500"
+                          />
+                        )}
+                      </li>
+                    ))}
+                </div>
+              </div>
+              <div className={index%2 != 0?`achiImg`:`achiImg hidden`}>
+                <a target="_blank" href={achievement.link}>
+                  <img src={achievement.img} />
+                </a>
+              </div>
+                
             </div>
-          </div>
-        </div>
-      ))}
+          </>
+        ))}
+      </div>
     </div>
   );
 }
