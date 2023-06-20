@@ -1,7 +1,6 @@
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon as FA } from "@fortawesome/react-fontawesome";
-import React from "react";
 import { Link } from "react-router-dom";
 
 function Footer() {

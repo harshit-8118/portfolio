@@ -1,4 +1,3 @@
-import React from "react";
 const langs = ["C", "C++", "javascript", "php"];
 
 function TlLanguage() {

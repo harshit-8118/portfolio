@@ -1,5 +1,3 @@
-import React from "react";
-import Header from "./Header";
 import Animate from "./Animate";
 
 const name = "HARSHIT";

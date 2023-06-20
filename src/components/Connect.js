@@ -1,5 +1,3 @@
-import React from "react";
-
 function Connect() {
   return (
     <div className="flex flex-wrap space-x-[0.10rem] md:space-x-4 overflow-hidden p-4 justify-center">

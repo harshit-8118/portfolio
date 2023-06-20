@@ -1,10 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import Popup from "./Popup";
 import { FontAwesomeIcon as FA } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
   faArrowUpRightFromSquare,
-  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { projects } from "./ProjectsDesc";
 

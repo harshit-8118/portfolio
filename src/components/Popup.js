@@ -1,6 +1,5 @@
-import { faCircleXmark, faComment } from "@fortawesome/free-regular-svg-icons";
+import { faComment } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon as FA } from "@fortawesome/react-fontawesome";
-import React, { forwardRef } from "react";
 
 const Popup = (props) => {
   const data = props.data;

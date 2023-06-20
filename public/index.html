@@ -9,28 +9,27 @@
       name="my portfolio website"
       content="Web site created using create-react-app"
     />
-    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
     <title>Harshit Shukla | PORTFOLIO</title>
     <style>
       * {
         margin: 0;
         padding: 0;
       }
-      body{
+      body {
         min-width: 17rem;
       }
       ::-webkit-scrollbar {
         width: 10px;
       }
-      ::-webkit-scrollbar-thumb{
+      ::-webkit-scrollbar-thumb {
         background-color: gray;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
       }
-      ::-webkit-scrollbar-thumb:hover{
+      ::-webkit-scrollbar-thumb:hover {
         background-color: rgb(106, 102, 102);
       }
-      ::-webkit-scrollbar-track{
+      ::-webkit-scrollbar-track {
         background-color: rgb(201, 202, 202);
         border-radius: 20px;
       }
@@ -41,32 +40,25 @@
     <div id="root"></div>
     <!--
       This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script> 
-    const func = ()=>{
-      var header = document.getElementById('header');
-      var faIcons = document.querySelectorAll('.faIcons');
-      faIcons.forEach(icon => {
-        icon.style.color = '#055959';
-      })
-      header.style.height = '4rem'
-      header.style.backgroundColor = '#f2f2f2';
-      var land = document.getElementById('landingpage');
-      if(window.scrollY < 20){
-        header.style.backgroundColor = '#46AEA2'
-        faIcons.forEach(icon => {
-          icon.style.color = '#1D2026';
-        })
-        header.style.height = '8rem'
-      }
-    }
+    <script>
+      const func = () => {
+        var header = document.getElementById("header");
+        var faIcons = document.querySelectorAll(".faIcons");
+        faIcons.forEach((icon) => {
+          icon.style.color = "#055959";
+        });
+        header.style.height = "4rem";
+        header.style.backgroundColor = "#f2f2f2";
+        var land = document.getElementById("landingpage");
+        if (window.scrollY < 20) {
+          header.style.backgroundColor = "#46AEA2";
+          faIcons.forEach((icon) => {
+            icon.style.color = "#1D2026";
+          });
+          header.style.height = "8rem";
+        }
+      };
     </script>
   </body>
 </html>

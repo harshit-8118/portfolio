@@ -1,4 +1,3 @@
-import React from "react";
 import { FontAwesomeIcon as FA } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import { myphoto } from "../assets/Img/images";

@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Underline() {
   return (
     <div className='my-[6rem]'> 

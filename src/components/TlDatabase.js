@@ -1,4 +1,3 @@
-import React from "react";
 const dbs = ["MySql", "MongoDB"];
 
 function TlDatabase() {

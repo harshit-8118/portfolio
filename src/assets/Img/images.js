@@ -27,18 +27,52 @@ export const atcoder = require('./platform-images/atcoder.png')
 //oops image
 export const oops = require('./platform-images/oops.jpg')
 
-export const img1 = require('./images2/1.avif');
-export const img2 = require('./images2/2.avif');
-export const img3 = require('./images2/3.avif');
-export const img4 = require('./images2/4.avif');
-export const img5 = require('./images2/5.avif');
-export const img6 = require('./images2/6.avif');
-export const img7 = require('./images2/7.avif');
-export const img8 = require('./images2/8.avif');
-export const img9 = require('./images2/9.avif');
-export const img10 = require('./images2/10.avif');
-export const img11 = require('./images2/11.avif');
-export const img12 = require('./images2/12.avif');
-export const img13 = require('./images2/13.avif');
-export const img14 = require('./images2/14.avif');
-export const img15 = require('./images2/15.avif');
+// news project images
+export const nprj1 = require('./project-images/news-project/1.png')
+export const nprj2 = require('./project-images/news-project/2.png')
+export const nprj3 = require('./project-images/news-project/3.png')
+export const nprj4 = require('./project-images/news-project/4.png')
+export const nprj5 = require('./project-images/news-project/5.png')
+export const nprj6 = require('./project-images/news-project/6.png')
+export const nprj7 = require('./project-images/news-project/7.png')
+export const nprj8 = require('./project-images/news-project/8.png')
+export const nprj9 = require('./project-images/news-project/9.png')
+export const nprj10 = require('./project-images/news-project/10.png')
+export const nprj11 = require('./project-images/news-project/11.png')
+
+// portfolio images
+export const pf1 = require('./project-images/portfolio/1.png')
+export const pf2 = require('./project-images/portfolio/2.png')
+export const pf3 = require('./project-images/portfolio/3.png')
+export const pf4 = require('./project-images/portfolio/4.png')
+export const pf5 = require('./project-images/portfolio/5.png')
+export const pf6 = require('./project-images/portfolio/6.png')
+export const pf7 = require('./project-images/portfolio/7.png')
+export const pf8 = require('./project-images/portfolio/8.png')
+export const pf9 = require('./project-images/portfolio/9.png')
+export const pf10 = require('./project-images/portfolio/10.png')
+export const pf11 = require('./project-images/portfolio/11.png')
+export const pf12 = require('./project-images/portfolio/12.png')
+export const pf13 = require('./project-images/portfolio/13.png')
+
+// phone directory images
+export const pdir1 = require('./project-images/phone-directory/1.png')
+export const pdir2 = require('./project-images/phone-directory/2.png')
+export const pdir3 = require('./project-images/phone-directory/3.png')
+export const pdir4 = require('./project-images/phone-directory/4.png')
+export const pdir5 = require('./project-images/phone-directory/5.png')
+export const pdir6 = require('./project-images/phone-directory/6.png')
+export const pdir7 = require('./project-images/phone-directory/7.png')
+export const pdir8 = require('./project-images/phone-directory/8.png')
+export const pdir9 = require('./project-images/phone-directory/9.png')
+
+// tailwind images
+export const tw1 = require('./project-images/tailwindCss/1.png')
+export const tw2 = require('./project-images/tailwindCss/2.png')
+export const tw3 = require('./project-images/tailwindCss/3.png')
+export const tw45 = require('./project-images/tailwindCss/4.5.png')
+export const tw4 = require('./project-images/tailwindCss/4.png')
+export const tw5 = require('./project-images/tailwindCss/5.png')
+export const tw7 = require('./project-images/tailwindCss/7.png')
+export const tw8 = require('./project-images/tailwindCss/8.png')
+export const tw9 = require('./project-images/tailwindCss/9.png')

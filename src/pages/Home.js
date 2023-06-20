@@ -1,4 +1,3 @@
-import React from "react";
 import Landing from "../components/Landing";
 import ToolTechnology from "../components/ToolTechnology";
 import Projects from "../components/Projects";
@@ -7,6 +6,7 @@ import Achievements from "../components/Achievements";
 import SemsterCard from "../components/SemsterCard";
 import Underline from "../components/Underline";
 import DownloadResume from "../components/DownloadResume";
+
 function Home() {
   return (
     <div id="top" className="overflow-hidden w-[100%]">

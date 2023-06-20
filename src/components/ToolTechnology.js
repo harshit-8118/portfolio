@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import { FontAwesomeIcon as FA } from "@fortawesome/react-fontawesome";
 import {
@@ -8,7 +7,6 @@ import {
   faLaptopCode,
   faScrewdriverWrench,
 } from "@fortawesome/free-solid-svg-icons";
-import Animate from "../components/Animate";
 
 // tt => tooltechnology
 

@@ -1,4 +1,3 @@
-import React from "react";
 const tools = ["git", "vscode", "postman"];
 
 function TlTools() {

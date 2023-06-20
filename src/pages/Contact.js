@@ -1,4 +1,3 @@
-import React from "react";
 import Emailing from "../components/Emailing";
 import { FontAwesomeIcon as FA } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";

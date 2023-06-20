@@ -1,4 +1,3 @@
-import React from "react";
 import { semesterAchievements as SA } from "./AchievementsDesc";
 
 function SemsterCard() {

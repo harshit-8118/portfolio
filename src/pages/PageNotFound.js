@@ -1,4 +1,3 @@
-import React from "react";
 import { oops } from "../assets/Img/images";
 
 function PageNotFound() {

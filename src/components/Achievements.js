@@ -1,14 +1,11 @@
-import React, { useState } from "react";
 import { achievements } from "./AchievementsDesc";
 import { FontAwesomeIcon as FA } from "@fortawesome/react-fontawesome";
 import {
   faArrowUpRightFromSquare,
   faCheck,
-  faCross,
   faStar,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
-import { icon } from "@fortawesome/fontawesome-svg-core";
 
 function Achievements() {
   String.prototype.replaceJSXfunc = function (find, replace) {
