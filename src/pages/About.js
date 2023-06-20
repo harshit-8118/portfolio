@@ -2,7 +2,7 @@ import { FontAwesomeIcon as FA } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import { myphoto } from "../assets/Img/images";
 import DownloadResume from "../components/DownloadResume";
-import Connect from '../components/Connect'
+import Connect from "../components/Connect";
 
 function About() {
   return (
@@ -21,13 +21,14 @@ function About() {
           <div id="about-img" className="mx-auto">
             <img src={myphoto} />
           </div>
-          <div id="about-desc" className="about-desc">
-            At, quae. Velit, eos architecto. Perferendis quasi, velit laboriosam
-            odit dolor nulla quas voluptas illum similique iusto? Atque itaque
-            eveniet porro quos! Sapiente vitae sunt est fuga harum, ducimus
-            minima quaerat, dolorum repellendus, voluptatum sed dolor inventore
-            amet ex aliquid! Mollitia, laudantium obcaecati assumenda nobis a
-            rerum officiis.
+          <div id="about-desc" className="about-desc whitespace-pre-wrap">
+            Hi, My name is Harshit Shukla. I am from Lucknow. I am a final year
+            student at Bundelkhand Institute of Engineering and Technology,
+            Jhansi pursuing BTech in Computer Science and Engineering. I am
+            currently working on personal project in MERN stack. I have
+            sharpened my skills in Data Structures and Algorithms since 2+years.
+            I used to practice DSA problems mainly on leetcode and GFG. I am
+            open to collaborate in full stack web development.
           </div>
         </div>
         <div

@@ -32,6 +32,9 @@ function Projects() {
       <div id="" data-aos="fade-up" className=" text-center text-3xl font-alegreya font-bold tracking-[0.5rem] py-8">
         MY PROJECTS
       </div>
+      <div className="tracking-normal text-sm text-center -mt-6 mb-10 font-roboto">
+        It's more obvious necessary to practice what you learn. Here are some of my projects which I have enjoyed to complete. I am working to increase this figure...
+      </div>
       <div className="projectContainer mx-auto my-4">
         <Popup data={data} hidden={hidden} />
         {projects.map((project, ind) => (

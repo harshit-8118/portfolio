@@ -22,9 +22,8 @@ function Achievements() {
       >
         MY ACHIEVEMENTS...
       </div>
-      <div className="tracking-normal text-sm text-center -mt-6 font-pathway font-thin">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam culpa
-        repellat vel quasi, inventore in itaque corrupti
+      <div className="tracking-normal text-sm text-center -mt-6 font-pathway">
+        I passionately give my time to DSA problems. it's ofcourse not easy but with time I am fond of it with ease.
       </div>
       <div id="achievementContainer" className="">
         {achievements.map((achievement, index) => (
