@@ -4,32 +4,100 @@ import { FontAwesomeIcon as FA } from "@fortawesome/react-fontawesome";
 import {
   faHome,
   faFileArrowDown,
-  faAddressCard,
   faPhoneVolume,
   faUser,
+  faStar,
+  faTrophy,
+  faShield,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Header() {
   return (
     <div>
-    <nav id="header" className="header flex justify-center h-32 items-center top-0 z-50 opacity-100 transition-all duration-500 fixed w-[100%] min-w-[10rem]">
-          <a href="https://drive.google.com/uc?export=download&id=1gXp27y_ZBGGvdVOFcnu05IcTKuyk-kmo">
-           <abbr title="Download Resume">
-            <FA icon={faFileArrowDown} shake className="faIcons mx-2" />
-            </abbr> 
+      <nav
+        id="header"
+        className="header flex justify-center h-32 items-center top-0 z-50 opacity-100 transition-all duration-300 fixed w-[100%] min-w-[10rem]"
+      >
+        <div className="p-2 ml-4 transition-all duration-300 group hover:border">
+          <a target="_blank" href="https://drive.google.com/file/d/1gXp27y_ZBGGvdVOFcnu05IcTKuyk-kmo/view?usp=sharing">
+            <FA icon={faFileArrowDown} shake className="faIcons" />
+            <p className="inline text-sm font-diphel group-hover:text-[#166e64]">
+              Resume
+            </p>
           </a>
-      <div className="z-40 flex-1 text-center space-x-0 xss:space-x-4 page-links">
-        <Link className="" to={"/"}>
-          <FA icon={faHome} className="faIcons" />
-        </Link>
-        <Link className="" to={"/About"}>
-          <FA icon={faUser} className="faIcons" />
-        </Link>
-        <Link className="" to={"/Contact"}>
-          <FA icon={faPhoneVolume} className="faIcons " beat  />
-        </Link>
-      </div>
-    </nav>
+        </div>
+        <div className="z-40 flex-1 text-center page-links">
+          <div className="inline transition-all duration-300 hover:border p-2 group">
+            <Link className="" to={"/"}>
+              <FA
+                icon={faHome}
+                className="faIcons transition-all duration-300 group-hover:h-[1.40rem] hover:-translate-y-[0.10rem]"
+              />
+              <p className="hidden xss:inline transition-all duration-300 text-sm group-hover:text-[#03423a]">
+                home
+              </p>
+            </Link>
+          </div>
+          <div className="inline transition-all duration-300 hover:border p-2 group">
+            <Link className="" to={"/About"}>
+              <FA
+                icon={faUser}
+                className="faIcons transition-all duration-300 group-hover:h-[1.40rem] hover:-translate-y-[0.10rem]"
+              />
+              <p className="hidden xss:inline transition-all duration-300 text-sm group-hover:text-[#03423a]">
+                about me
+              </p>
+            </Link>
+          </div>
+          <div className="inline transition-all duration-300 hover:border p-2 group">
+            <Link className="" to={"/Contact"}>
+              <FA
+                icon={faPhoneVolume}
+                beat
+                className="faIcons transition-all duration-300 group-hover:h-[1.40rem] hover:-translate-y-[0.10rem]"
+              />
+              <p className="hidden xss:inline transition-all duration-300 text-sm group-hover:text-[#03423a]">
+                contact
+              </p>
+            </Link>
+          </div>
+        </div>
+        <div id="header-right" className="mr-0 xms:mr-2 flex flex-col xsm:flex xsm:flex-row">
+          <div className="inline hover:border transition-all duration-300 p-2 group">
+            <a className="" href={"/#skills"}>
+              <FA
+                icon={faStar}
+                className="px-1 h-4 w-4 lg:h-5 lg:w-5 transition-all duration-300 group-hover:h-[1.40rem] hover:-translate-y-[0.10rem] text-[#F7CF47]"
+              />
+              <p className="hidden sm:inline transition-all duration-300 text-sm group-hover:text-[#03423a]">
+                skills
+              </p>
+            </a>
+          </div>
+          <div className="inline transition-all duration-300 hover:border p-2 group">
+            <a className="" href={"/#projects"}>
+              <FA
+                icon={faShield}
+                className="px-1 h-4 w-4 lg:h-5 lg:w-5 transition-all duration-300 group-hover:h-[1.40rem] hover:-translate-y-[0.10rem] text-[#F7CF47]"
+              />
+              <p className="hidden sm:inline transition-all duration-300 text-sm group-hover:text-[#03423a]">
+                projects
+              </p>
+            </a>
+          </div>
+          <div className="inline transition-all duration-300 hover:border p-2 group">
+            <a className="" href={"/#achievements"}>
+              <FA
+                icon={faTrophy}
+                className="px-1 h-4 w-4 lg:h-5 lg:w-5 transition-all duration-300 group-hover:h-[1.40rem] hover:-translate-y-[0.10rem] text-[#F7CF47]"
+              />
+              <p className="hidden sm:inline transition-all duration-300 text-sm group-hover:text-[#03423a]">
+                achievements
+              </p>
+            </a>
+          </div>
+        </div>
+      </nav>
     </div>
   );
 }

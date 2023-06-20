@@ -18,7 +18,7 @@ const Popup = (props) => {
         className={`popup ${hidden} text-xl text-slate-800`}
       >
         <div className="popHeading sticky top-2 z-40">
-          <h1 className="font-normal tracking-widest md:font-semibold text-xl md:text-2xl text-[#068c7d]">{project_name}</h1>
+          <h1 className="font-alegreya font-semibold tracking-widest md:font-semibold text-xl md:text-2xl text-[#068c7d]">{project_name}</h1>
           <span className="mt-[.25rem] hover:-translate-y-1">
             <a href={git_link} target="_blank">
               <svg
@@ -32,11 +32,11 @@ const Popup = (props) => {
           </span>
         </div>
         <div className="poptoolTechs p-1 md:p-3">
-          <p className="float-left text-white font-medium">Tools and Technologies :</p>
+          <p className="float-left text-white font-alegreya">Tools and Technologies :</p>
           {technologies &&
-            technologies.map((techs, ind) => <li data-aos="fade-left" data-aos-duration="400" data-aos-delay={ind*50} key={techs}>{techs}</li>)}
+            technologies.map((techs, ind) => <li className="font-diphel" data-aos="fade-left" data-aos-duration="400" data-aos-delay={ind*50} key={techs}>{techs}</li>)}
           {other_techs &&
-            other_techs.map((techs, ind) => <li data-aos="fade-left" data-aos-duration="400" data-aos-delay={ind*50 + 200} key={techs}>{techs}</li>)}
+            other_techs.map((techs, ind) => <li className="font-diphel" data-aos="fade-left" data-aos-duration="400" data-aos-delay={ind*50 + 200} key={techs}>{techs}</li>)}
         </div>
         <div className="popDesc">
           <FA icon={faComment} /> &nbsp;{description}
@@ -44,7 +44,7 @@ const Popup = (props) => {
         <div id="popImages">
           {project_imgs &&
             project_imgs.map((img, ind) => (
-              <div key={img} className={`transition-all duration-200 ${ind%2 == 0? '-skew-x-3': 'skew-x-3'} hover:skew-x-0 popImagesimg z-30 border`}>
+              <div key={img} className={`hover:opacity-100 opacity-80 transition-all duration-200 ${ind%2 == 0? '-skew-x-3': 'skew-x-3'} hover:skew-x-0 popImagesimg z-30 border`}>
                 <img key={img} src={img} alt={project_name + ".img"} />
               </div>
             ))}

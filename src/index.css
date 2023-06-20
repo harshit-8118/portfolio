@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400&family=Cherry+Bomb+One&family=Darumadrop+One&family=Amatic+SC&family=Pacifico&family=Pathway+Extreme:wght@300&family=Righteous&family=Diphylleia&family=Roboto:ital,wght@0,100;1,100&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,10 +10,16 @@
         @apply md:h-14 lg:h-8 lg:bg-[#46AEA2]
     }
     .header .faIcons{
-        @apply w-4 h-4 xxs:w-6 xxs:h-6 sm:w-7 sm:h-7 p-2 xss:p-4 md:p-3 hover:-translate-y-[0.10rem] hover:h-[1.40rem] text-[#1D2026]
+        @apply px-1 h-4 w-4 lg:h-5 lg:w-5 
     }
     .header .page-links{
-        @apply space-x-1 sm:space-x-2 md:space-x-1 lg:space-x-0
+        @apply space-x-0 xsx:space-x-1 md:space-x-4
+    }
+    .header .page-links p, #header-right p{
+        @apply font-alegreya
+    }
+    #header-right {
+        @apply  space-x-0 md:space-x-4 overflow-hidden
     }
 
     
@@ -31,7 +38,7 @@
         @apply text-white z-40 p-2 xss:p-8 xss:leading-[1.5rem] md:leading-[2.5rem] leading-[1rem] lg:leading-[3rem]
     }
     .landing-page .desc-heading{ 
-        @apply font-bold font-serif tracking-widest
+        @apply font-bold font-righteous tracking-widest
         text-[.9rem]
         xss:text-[1.5rem]
         xsm:text-[2rem]
@@ -40,7 +47,7 @@
         lg:text-[3.7rem]
     }
     .landing-page .desc-para{
-        @apply font-thin font-serif float-right tracking-widest
+        @apply font-thin font-asmatic float-right tracking-widest
         text-[.6rem]
         xss:text-[1rem]
         xsm:text-[1.2rem]
@@ -54,8 +61,11 @@
         xss:space-x-2 xss:m-6
         sm:space-x-6
     }
-    #skills-toolTechs{
+    #skills{
         @apply bg-[#1D2026] text-white pt-8 pb-4
+    }
+    .ttheading {
+        @apply font-roboto
     }
     .ttnavigation .tticons{
         @apply text-center text-white
@@ -98,14 +108,14 @@
         
     }
     .projectContainer .projectCard .cardTechsMain{
-        @apply flex list-none space-x-4 text-sm font-semibold
+        @apply flex list-none space-x-4 text-sm
         xxs:text-sm 
     }
     .projectContainer .projectCard .cardTechsOther{
-        @apply flex list-none font-medium text-sm space-x-4 
+        @apply flex list-none text-sm space-x-4 
     }
     .projectContainer .projectCard .cardDesc{
-        @apply mx-auto p-2 w-auto tracking-tight leading-5 text-center break-words
+        @apply mx-auto p-2 w-auto tracking-tight leading-5 text-center break-words font-roboto
         xsm:w-96 overflow-hidden indent-4 
     }
     .cardDescLinks{
@@ -125,10 +135,10 @@
     }
     .poptoolTechs li{
         @apply border rounded-lg px-1 text-base text-white
-        sm:px-2 sm:py-1 md:text-lg bg-[#05a996] transition-all ease-in-out duration-150 hover:bg-[#1d2026]
+        sm:px-2 sm:py-1 md:text-lg bg-[#05a996] transition-all ease-in-out duration-150 hover:bg-[#158f81]
     }
     .popDesc {
-        @apply text-base border-slate-400 border m-2 md:m-4 bg-white p-2 rounded-xl indent-8 whitespace-pre-wrap
+        @apply text-base border-slate-400 border m-2 md:m-4 bg-white p-2 rounded-xl indent-8 whitespace-pre-wrap font-diphel
     }
     #popImages {
         @apply object-fill w-[80%] mx-auto overflow-hidden
@@ -169,7 +179,7 @@
         xss:w-[14rem] xss:h-[14rem]
     }
     #about-desc{
-        @apply m-1 text-xs tracking-wide leading-5 xss:text-sm min-w-[16rem] max-w-[26rem] rounded-[3rem] p-2 text-white
+        @apply m-1 text-xs tracking-wide leading-5 xss:text-sm min-w-[16rem] max-w-[26rem] rounded-[3rem] p-2 text-white font-diphel
     }
     #about-card{
         @apply border-2 overflow-x-auto border-[#46aea2] w-auto min-w-[16rem] max-w-[24rem] flex space-x-4 p-4 h-fit rounded-[3rem]
@@ -180,13 +190,13 @@
         @apply m-1
     }
     #form input {
-        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#46aea2] m-1 py-3 px-4 tracking-widest font-semibold text-[18px] text-slate-500
-        focus:placeholder:text-slate-300 focus:outline-none
+        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#46aea2] m-1 py-3 px-4 tracking-wide font-semibold text-[15px] text-white bg-[#333539] font-roboto
+        focus:outline-none focus:tracking-widest
         placeholder:text-slate-400 placeholder:font-semibold placeholder:tracking-widest
     }
     #form textarea {
-        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#46aea2] m-1 py-3 px-4 tracking-wide font-medium text-base resize-y text-slate-400 min-h-[6rem]
-        focus:placeholder:text-slate-300 focus:outline-none  focus:tracking-widest
+        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#46aea2] m-1 py-3 px-4 tracking-wide font-semibold text-[15px] resize-y min-h-[6rem] bg-[#333539] font-roboto
+        focus:outline-none  focus:tracking-widest text-white
         placeholder:text-slate-400 placeholder:font-semibold placeholder:tracking-widest
     }
     
@@ -194,7 +204,7 @@
 
 
     .footer-links {
-        @apply text-slate-600 hover:text-slate-800 hover:underline decoration-slate-800
+        @apply text-slate-600 hover:text-slate-800 hover:underline decoration-slate-400 font-thin
     }
    
 }

@@ -3,6 +3,7 @@ import { FontAwesomeIcon as FA } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import { myphoto } from "../assets/Img/images";
 import DownloadResume from "../components/DownloadResume";
+import Connect from '../components/Connect'
 
 function About() {
   return (
@@ -14,6 +15,7 @@ function About() {
       >
         <div
           data-aos="fade-right"
+          data-aos-duration="400"
           id="photo-about"
           className="flex flex-col justify-center photo-about border m-2"
         >
@@ -32,9 +34,10 @@ function About() {
         <div
           id="about-card"
           data-aos="fade-left"
+          data-aos-duration="400"
           className="about-card my-auto group transition-all duration-500 hover:bg-[#1d2026]"
         >
-          <div className="flex flex-col space-y-3  group-hover:text-white">
+          <div className="flex flex-col space-y-3  group-hover:text-white font-alegreya">
             <span>Name</span>
             <span>Email</span>
             <span>Date of Birth</span>
@@ -42,7 +45,7 @@ function About() {
             <span>Intermediate</span>
             <span>Graduation</span>
           </div>
-          <div className="flex flex-col space-y-3 group-hover:text-white">
+          <div className="flex flex-col space-y-3 group-hover:text-white font-alegreya">
             <span className="w-[15rem]">: Harshit Shukla</span>
             <span className="w-[15rem]">: hharshit2112@gmail.com</span>
             <span className="w-[15rem] oldstyle-nums">: 16 Feb, 2000</span>
@@ -57,12 +60,12 @@ function About() {
       <div className="bg-[#f2f2f2] py-4">
         <DownloadResume />
       </div>
-      <div
-        id="footer-bar"
-        className="text-center h-16 pt-6 text-sm text-white bg-slate-800"
-      >
+      <Connect />
+      <div className="text-center h-16 pt-6 text-sm text-white bg-slate-800 tracking-widest">
         <FA icon={faCopyright} /> &nbsp;Harshit Shukla{" "}
-        <span className="min-w-[16rem] pl-10 text-xs">last updated: x/y/z</span>
+        <span className="min-w-[16rem] pl-10 text-xs oldstyle-nums">
+          last updated: 21/06/2023
+        </span>
       </div>
     </>
   );

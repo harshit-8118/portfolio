@@ -11,7 +11,7 @@ const ContactForm = forwardRef((props, ref) => {
 
   return (
     <form ref={ref} id="form" className="form flex flex-col mx-auto">
-      <h1 className="text-[#0c7064] mx-auto text-xl font-semibold m-1  sm:text-4xl">Drop me a line..</h1>
+      <h1 className="font-roboto text-white mx-auto text-xl font-bold m-1  sm:text-4xl">Drop me a line..</h1>
       <input
         className=""
         type="text"

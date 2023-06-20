@@ -16,11 +16,11 @@ function ToolTechnology() {
   return (
     <>
       <div
-        id="skills"
+        id="skills-toolTechs"
         data-aos="fade-up"
-        className="text-center text-3xl font-bold tracking-[0.5rem] py-4"
+        className="text-center text-3xl font-bold font-alegreya tracking-[0.5rem] py-4"
       >
-        My Skills
+        MY SKILLS
       </div>
       <ul id="ttnavigation" className="ttnavigation">
         <Link to={"/"} className="tticons flex space-x-4 justify-center">

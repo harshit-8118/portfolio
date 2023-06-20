@@ -15,11 +15,11 @@ function Home() {
       </div>
      <div className="h-[6rem]"></div>
       <Underline />
-      <div id="skills-toolTechs" className="">
+      <div id="skills" className="">
         <ToolTechnology />
       </div>
        <Underline />
-      <div className="">
+      <div id="projects" className="">
       <Projects />
       </div>
       <Underline />

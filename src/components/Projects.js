@@ -30,15 +30,15 @@ function Projects() {
         <div className="animate-pulse w-12 translate-y-8 lg:w-20 lg:translate-y-11 translate-x-2 rotate-45 text-center z-50 border-2 border-black group-hover:animate-none group-hover:border-white"></div>
         <div className="animate-pulse w-12 translate-y-7 lg:w-20 lg:translate-y-10 translate-x-2 -rotate-45 text-center z-50 border-2 border-black group-hover:animate-none group-hover:border-white"></div>
       </div>
-      <div id="projects" data-aos="fade-up" className="text-center text-3xl font-bold tracking-[0.5rem] py-8">
+      <div id="" data-aos="fade-up" className=" text-center text-3xl font-alegreya font-bold tracking-[0.5rem] py-8">
         MY PROJECTS
       </div>
       <div className="projectContainer mx-auto my-4">
         <Popup data={data} hidden={hidden} />
         {projects.map((project, ind) => (
-          <div data-aos={ind%2 == 0 ? 'fade-up-right': 'fade-up-left'} key={ind} className="projectCard group">
+          <div data-aos={ind%2 == 0 ? 'fade-up-right': 'fade-up-left'} data-aos-duration="400" key={ind} className="projectCard group">
             <div className="p-[.15rem] cardBody flex flex-col group-hover:bg-gradient-to-r from-[#7ce7db] to-[#055959] group-hover:text-[#1D2026]">
-              <h1 className="font-bold text-2xl py-2 xsm:text-3xl lg:text-4xl">
+              <h1 className="font-alegreya text-2xl py-2 xsm:text-3xl lg:text-4xl">
                 {project.project_name}
               </h1>
               <div data-aos={ind%2 == 0 ? 'zoom-out-right': 'zoom-out-left'} className="cardDescLinks">
@@ -68,13 +68,13 @@ function Projects() {
                 </button>
               </div>
             </div>
-            <div className="space-y-1 cardBodyBottom group-hover:text-slate-900 group-hover:bg-gradient-to-r from-[#7ce7db] to-[#055959]">
+            <div className="space-y-1 cardBodyBottom group-hover:text-[#092d28] group-hover:bg-gradient-to-r from-[#7ce7db] to-[#055959]">
               <div className="cardTechsMain">
-                <p className="p-[.15rem] text-sm w-[6rem] border border-slate-700 xsm:text-base xsm:w-[6.8rem] mr-[0.1rem] group-hover:border-white">
+                <p className="pt-1 p-[.15rem] text-sm w-[6rem] border border-slate-700 xsm:text-base xsm:w-[6.8rem] mr-[0.1rem] group-hover:border-white font-roboto font-semibold">
                   Specifications
                 </p>
                 :
-                <div className="p-[.15rem] border border-slate-700 flex justify-center space-x-1 divide-x-2 divide-slate-700 text-sm xsm:text-base group-hover:border-white group-hover:divide-white">
+                <div className="p-[.15rem] border border-slate-700 flex justify-center space-x-1 divide-x-2 divide-slate-700 text-sm xsm:text-base group-hover:border-white group-hover:divide-white font-roboto group-hover:font-alegreya">
                   {project.technologies.map((techs, ind2) => (
                     <li key={ind2} className="p-1">
                       {techs}
@@ -85,11 +85,11 @@ function Projects() {
               <div className="cardTechsOther">
                 {project.other_techs.length ? (
                   <>
-                    <p className="p-[.15rem] text-sm w-[6rem] border border-slate-700 xsm:text-base xsm:w-[6.8rem] mr-[0.1rem] group-hover:border-white">
+                    <p className="p-[.15rem] text-sm w-[6rem] border border-slate-700 xsm:text-base xsm:w-[6.8rem] mr-[0.1rem] group-hover:border-white font-roboto font-semibold">
                       Other Techs
                     </p>
                     :
-                    <div className="p-[.15rem] text-sm flex flex-wrap justify-center space-x-1 divide-x-2 xsm:text-base border border-slate-700 divide-slate-700  group-hover:divide-white group-hover:border-white">
+                    <div className="p-[.15rem] text-sm flex flex-wrap justify-center space-x-1 divide-x-2 xsm:text-base border border-slate-700 divide-slate-700 group-hover:divide-white group-hover:border-white font-roboto group-hover:font-alegreya">
                       {project.other_techs.map((otechs, ind3) => (
                         <li key={ind3} className="p-1">
                           {otechs}

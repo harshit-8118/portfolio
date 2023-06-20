@@ -26,6 +26,17 @@ module.exports = {
         400: '150rem',
         500: '200rem',
       }, 
+      fontFamily:{
+        'darum': ['Darumadrop One', 'cursive'],
+        'pacifico': ['Pacifico', 'cursive'],
+        'righteous': ['Righteous', 'cursive'],
+        'roboto': ['Roboto', 'sans-serif'],
+        'alegreya': ['Alegreya Sans', 'sans-serif'],
+        'cherry': ['Cherry Bomb One', 'cursive'],
+        'asmatic': ['Amatic SC', 'cursive'],
+        'diphel':['Diphylleia', 'serif'],
+        'pathway':['Pathway Extreme', 'sans-serif']
+      }
     },
   },
   plugins: [],
