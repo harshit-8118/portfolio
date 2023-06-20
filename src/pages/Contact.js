@@ -5,7 +5,7 @@ import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 
 function Contact() {
   return (
-    <div className='border-2 border-transparent mt-[4rem]'>
+    <div className='mt-[10rem]'>
         <Emailing />
         <div id="footer-bar" className="text-center h-16 pt-6 text-sm text-white bg-slate-800">
         <FA icon={faCopyright} /> &nbsp;Harshit Shukla{" "}

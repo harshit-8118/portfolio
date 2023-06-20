@@ -21,7 +21,7 @@ function Achievements() {
       <div
         id="projects"
         data-aos="fade-up"
-        className="flex flex-col text-center xss:text-3xl font-bold tracking-[0.5rem] py-8 "
+        className="flex flex-col text-center xss:text-3xl font-bold tracking-[0.5rem] py-8"
       >
         MY ACHIEVEMENTS...
       </div>
@@ -29,7 +29,7 @@ function Achievements() {
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam culpa
         repellat vel quasi, inventore in itaque corrupti
       </div>
-      <div id="achievementContainer">
+      <div id="achievementContainer" className="">
         {achievements.map((achievement, index) => (
           <>
             <div key={achievement.key} data-aos-duration="300" data-aos={index%2 ? 'fade-left': 'fade-right'} className={index%2 == 0? 'achiCard group lg:pr-[24rem] md:pr-[18rem] sm:pr-[10rem]': 'achiCard group lg:pl-[24rem] md:pl-[18rem] sm:pl-[10rem]'}>

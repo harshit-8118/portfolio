@@ -23,7 +23,7 @@ const Emailing = () => {
   };
 
   return (
-    <div className="border-2 border-green-700 w-[70%] mx-auto xxs:w-[55%] xss:w-[50%] md:w-[40%] my-[4rem] pt-5 p-1 rounded-lg">
+    <div className="border-y-8 border-x border-[#1d9284] w-[70%] mx-auto xxs:w-[55%] xss:w-[50%] md:w-[40%] mt-[7rem] my-[3rem] pt-2 p-1 rounded-3xl bg-[#f2f2f2]">
       <ContactForm ref={FormRef} />
       {/* check on higher need, very-limited-email-options. */}
       {/* 
@@ -37,7 +37,7 @@ const Emailing = () => {
         }}
       /> */}
       <input
-        className="m-1 my-2 bg-blue-500 p-4 text-white uppercase font-bold tracking-widest block border rounded-lg w-[99%]"
+        className="m-1 my-2 bg-gradient-to-b from-[#71ded1] transition-all duration-700 hover:to-[#064e46] to-[#289689] p-4 text-white uppercase font-bold tracking-widest block border rounded-3xl w-[99%]"
         type="submit"
         value="Submit"
         onClick={(e) => {

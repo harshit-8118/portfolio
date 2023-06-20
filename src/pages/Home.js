@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Achievements from "../components/Achievements";
 import SemsterCard from "../components/SemsterCard";
 import Underline from "../components/Underline";
+import DownloadResume from "../components/DownloadResume";
 function Home() {
   return (
     <div id="top" className="overflow-hidden w-[100%]">
@@ -24,6 +25,7 @@ function Home() {
       <Underline />
       <Achievements />
       <div className="-mt-16"></div>
+      <DownloadResume />
       <Underline />
       <SemsterCard />
       <Footer />
