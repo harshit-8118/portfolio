@@ -54,7 +54,7 @@ const Emailing = () => {
           e.preventDefault();
           if (checkForm(FormRef.current)) {
             setclicked(true);
-            // sendEmail(FormRef.current);
+            sendEmail(FormRef.current);
           }
         }}
       >
