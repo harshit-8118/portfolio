@@ -12,7 +12,7 @@ import TlToolsTechs from "./components/TlToolsTechs";
 
 function App() {
   return (
-    <div className="">
+    <div className="selection:bg-[#60cfc2]">
       <BrowserRouter>
         <Header />
         <Routes>

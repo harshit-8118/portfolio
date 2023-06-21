@@ -18,17 +18,18 @@ export const projects = [
       For client side - 
       a. News are offered to them getting from database developed in mysql.
       b. Client can watch news of their selected category.
-      c. There is 'recent section' on side bar, the most rated news are set their.
+      c. There is of side bar 'recent news', the most rated news are set their.
       d. Client can read full news on clicking 'read more' button.
-      e. News post consist of Heading, Category, date_of_origin, description and Creator.
-      f. Client can also search news of their liking.
+      e. News post consist of Heading, Category, date_of_origin, description and Creator_name.
+      f. Client can also search news of their choice.
 
       For admin side -
-      Project uses admin login according to their role and authorities.
+      Project uses admin and creator login according to their role and authorities.
       a. It had user panel where admin and creator works according to their authority.
       b. News post creation, deletion, updation are managed on to their end.
-      c. Admin can change the website setting and News Category.
+      c. Admin can change the website setting, creator-user and news-content.
       d. Admin and creator has authority to their domain.
+      e. Creator has it domain limited to news only.
       `,
       git_link: "https://github.com/harshit-8118/NEWS_PROJECT",
       project_imgs:[  nprj1, nprj2, nprj3, nprj4, nprj5, nprj6, nprj7, nprj8, nprj9, nprj10, nprj11]
@@ -41,7 +42,8 @@ export const projects = [
       - It is the website itself in which I used my 'react' learning with lots of fun and techs.
       - I designed each page with Tailwind and used javascript for toggling.
       - I used 'aos' package for animations.
-      - This react app project uses 'react-router-dom' package for redirecting to avoid page reload and fast services.
+      - This react app project uses 'react-router-dom' package for routing to avoid page reload and fast services.
+      - I have set routes and nested routes in this project with outlet.
       - My experience with technologies, and self learning helped me a lot for making this awesome working portfolio.
       - I have tried to avoid code repetition on each edge,
       This project contains sections of my -
@@ -73,7 +75,7 @@ export const projects = [
       b. If one inserts name if name doesn't already exists it will be saved with number in phone directory.
       c. If one search for name and it exists in phone directory, their contact details will be shown.
       d. If one deletes a contact, it will be removed from phone records and can not be found on next search onwards.
-      e. Can exit from this looping operation under phone directory, pressig 'x'
+      e. Can exit from this looping operation under phone directory, by pressing 'x'
       `,
       git_link: "https://github.com/harshit-8118/phone-directory",
       project_imgs:[pdir1, pdir2, pdir3, pdir4, pdir5, pdir6, pdir7, pdir8, pdir9]
