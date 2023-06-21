@@ -61,7 +61,7 @@ function Header() {
             </Link>
           </div>
         </div>
-        <div id="header-right" className="mr-0 xms:mr-2 flex flex-col xsm:flex xsm:flex-row">
+        <div id="header-right" className="mr-0 xms:mr-2 mt-20 xsm:mt-0 flex flex-col xsm:flex xsm:flex-row">
           <div className="inline hover:border transition-all duration-300 p-2 group">
             <a className="" href={"/#skills"}>
               <FA

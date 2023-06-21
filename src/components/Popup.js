@@ -37,13 +37,14 @@ const Popup = (props) => {
           {other_techs &&
             other_techs.map((techs, ind) => <li className="font-diphel" data-aos="fade-left" data-aos-duration="400" data-aos-delay={ind*50 + 200} key={techs}>{techs}</li>)}
         </div>
-        <div className="popDesc">
+        <div className="popDesc text-black hover:bg-yellow-50">
           <FA icon={faComment} /> &nbsp;{description}
         </div>
         <div id="popImages">
           {project_imgs &&
             project_imgs.map((img, ind) => (
               <div key={img} className={`hover:opacity-100 opacity-80 transition-all duration-200 ${ind%2 == 0? '-skew-x-3': 'skew-x-3'} hover:skew-x-0 popImagesimg z-30 border`}>
+                <p className="text-center oldstyle-nums font-darum text-white bg-[#1d2026]">$ {ind + 1} $</p>
                 <img key={img} src={img} alt={project_name + ".img"} />
               </div>
             ))}
