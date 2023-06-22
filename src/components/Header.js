@@ -10,6 +10,8 @@ import {
   faShield,
 } from "@fortawesome/free-solid-svg-icons";
 
+const resumeLink = "https://drive.google.com/file/d/11GLA8UeBC5Lto9NyYyvvfVoZBofkS0hF/view?usp=sharing";
+
 function Header() {
   return (
     <div>
@@ -18,7 +20,7 @@ function Header() {
         className="header flex justify-center h-32 items-center top-0 z-50 opacity-100 transition-all duration-300 fixed w-[100%] min-w-[10rem]"
       >
         <div className="p-2 ml-4 transition-all duration-300 group hover:border">
-          <a target="_blank" href="https://drive.google.com/file/d/1gXp27y_ZBGGvdVOFcnu05IcTKuyk-kmo/view?usp=sharing">
+          <a target="_blank" href={resumeLink}>
             <FA icon={faFileArrowDown} shake className="faIcons" />
             <p className="inline text-sm font-diphel group-hover:text-[#166e64]">
               Resume

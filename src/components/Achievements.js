@@ -18,11 +18,11 @@ function Achievements() {
       <div
         id="projects"
         data-aos="fade-up"
-        className="flex flex-col text-center xss:text-3xl font-alegreya font-bold tracking-[0.5rem] py-8"
+        className="flex flex-col text-center text-2xl xss:text-3xl font-alegreya font-bold tracking-[0.3rem] py-8"
       >
         MY ACHIEVEMENTS...
       </div>
-      <div className="tracking-normal text-sm text-center -mt-6 font-pathway">
+      <div className="tracking-normal text-sm text-center -mt-6 font-pathway mx-4">
         I passionately give my time to DSA problems. it's ofcourse not easy but with time I am fond of it with ease.
       </div>
       <div id="achievementContainer" className="">

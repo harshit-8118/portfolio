@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 import ContactForm from "./ContactForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane, faSpinner } from "@fortawesome/free-solid-svg-icons";
-import Connect from "./Connect";
+import Connect2 from "./Connect2";
 
 const Service_id = "service_y02x4mu",
   Template_id = "template_i6k6z8o",
@@ -44,7 +44,7 @@ const Emailing = () => {
       data-aos-duration="250"
       className="border-y-2 border-x border-[#1d9284] w-[70%] mx-auto xxs:w-[55%] xss:w-[50%] md:w-[40%] mt-[7rem] my-[3rem] pt-2 p-1 rounded-3xl bg-[#1d2026]"
     >
-      <Connect />
+      <Connect2 />
       <ContactForm ref={FormRef} />
       {/* check on higher need, very-limited-email-options. */}
       <button

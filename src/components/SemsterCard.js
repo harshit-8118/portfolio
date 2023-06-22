@@ -12,7 +12,7 @@ function SemsterCard() {
       >
         GRADES
       </div>
-      <div className="tracking-normal text-sm text-center -mt-6 mb-10 font-roboto font-thin text-white">
+      <div className="tracking-normal text-sm text-center -mt-6 mb-10 font-roboto font-thin text-white mx-4">
         Other than my personal syllabus and learning, The academic coursework were there to enhance my knowledge. Those course-outcomes helped me also a lot to connect my skills with my learning.
       </div>
       <div className="flex flex-wrap justify-center py-2 mb-4 xsx:space-x-1 text-white space-y-2 xsx:space-y-0 font-roboto">

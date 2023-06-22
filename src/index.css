@@ -39,21 +39,18 @@
     }
     .landing-page .desc-heading{ 
         @apply font-bold font-righteous tracking-widest
-        text-[.9rem]
-        xss:text-[1.5rem]
+        text-[1.5rem]
+        xss:text-[2rem]
         xsm:text-[2rem]
-        sm:text-[2.3rem]
-        md:text-[3rem]
-        lg:text-[3.7rem]
+        sm:text-[3rem]
+        md:text-[3.7rem]
     }
     .landing-page .desc-para{
-        @apply font-thin font-asmatic float-right tracking-widest
-        text-[.6rem]
-        xss:text-[1rem]
-        xsm:text-[1.2rem]
-        sm:text-[1.5rem]
-        md:text-[2.0rem]
-        lg:text-[2.3rem]
+        @apply font-semibold font-asmatic float-right tracking-widest mt-1
+        text-[1rem]
+        xss:text-[1.5rem]
+        sm:text-[2.2rem] sm:mt-3
+        md:text-[2.7rem]
     }
 
     .ttnavigation {
@@ -75,7 +72,6 @@
         sm:w-[8rem] sm:text-base sm:p-1 sm:space-x-1
         md:w-[10rem] md:text-xl md:p-2 md:space-x-2
         transition-all duration-500 hover:scale-[1.25]
-        decoration-[#46AEA2] underline-offset-2
     }
     .ttoutlet {
         @apply border border-white hover:bg-[#46AEA2] transition-all duration-700 ease-in-out
