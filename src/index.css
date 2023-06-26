@@ -186,12 +186,12 @@
         @apply m-1
     }
     #form input {
-        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#46aea2] m-1 py-3 px-4 tracking-wide font-semibold text-[15px] text-white bg-[#333539] font-roboto
+        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#46aea2] m-1 py-2 md:py-3 px-4 tracking-wide font-semibold text-[10px] md:text-[15px] text-white bg-[#333539] font-roboto
         focus:outline-none focus:tracking-widest
         placeholder:text-slate-400 placeholder:font-semibold placeholder:tracking-widest
     }
     #form textarea {
-        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#46aea2] m-1 py-3 px-4 tracking-wide font-semibold text-[15px] resize-y min-h-[6rem] bg-[#333539] font-roboto
+        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#46aea2] m-1 py-2 md:py-3 px-4 tracking-wide font-semibold text-[10px] md:text-[15px] resize-y min-h-[6rem] bg-[#333539] font-roboto
         focus:outline-none  focus:tracking-widest text-white
         placeholder:text-slate-400 placeholder:font-semibold placeholder:tracking-widest
     }

@@ -1,14 +1,6 @@
-import React, { forwardRef, useState } from "react";
-
-const InitialSender = {
-  name: "",
-  email: "",
-  message: "",
-};
+import React, { forwardRef } from "react";
 
 const ContactForm = forwardRef((props, ref) => {
-  const [sender, setSender] = useState(InitialSender);
-
   return (
     <form ref={ref} id="form" className="form flex flex-col mx-auto">
       <h1 className="font-roboto text-white mx-auto text-xl font-bold m-1  sm:text-4xl">Drop me a line..</h1>
@@ -16,25 +8,20 @@ const ContactForm = forwardRef((props, ref) => {
         className=""
         type="text"
         name="sender_name"
-        value={sender.name}
         placeholder="Name"
-        onChange={(e) => setSender({ ...sender, name: e.target.value })}
         />
       <input
         className=""
-        type="text"
+        type="email"
         name="sender_email"
-        value={sender.email}
         placeholder="Email"
-        onChange={(e) => setSender({ ...sender, email: e.target.value })}
         />
       <textarea
         className=""
         type="text"
         name="sender_message"
-        value={sender.message}
+        maxLength={250}
         placeholder="Write your message..."
-        onChange={(e) => setSender({ ...sender, message: e.target.value })}
       />
     </form>
   );
