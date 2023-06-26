@@ -1,5 +1,26 @@
 # Getting Started with Create React App
 
+- It is the website in which I used my 'react' learning with lots of fun and techs.
+- I had mentioned my works, skills, achievement with taken care of best user experience.
+- I designed each page with Tailwind and used javascript for toggling.
+- I used 'aos' package for animations.
+- This react app project uses 'react-router-dom' package for routing to avoid page reload and fast services.
+- I have set routes and nested routes in this project with outlet.
+- My experience with technologies, and self learning helped me a lot for making this awesome working portfolio.
+- I have tried to avoid code repetition on each edge,
+This project contains sections of my -
+```
+      a. skills
+      b. projects
+      c. achievements
+      d. academics
+      e. social-media links
+      f. About me 
+      g. Contact
+      h. Resume
+```
+I have increased a lot of knowledge and experience with this project.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
