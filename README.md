@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/809268d9-536d-405e-83bb-32c34feb754e/deploy-status)](https://app.netlify.com/sites/hharshit8118/deploys)
 - It is the website in which I used my 'react' learning with lots of fun and techs.
 - I had mentioned my works, skills, achievement with taken care of best user experience.
 - I designed each page with Tailwind and used javascript for toggling.
