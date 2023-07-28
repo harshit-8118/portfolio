@@ -50,7 +50,7 @@ const Emailing = () => {
       <div
         data-aos="zoom-in"
         data-aos-duration="250"
-        className="border-y-2 border-x border-[#1d9284] w-[85%] mx-auto xss:w-[70%] md:w-[60%] lg:w-[40%] mt-[7rem] my-[3rem] pt-2 p-1 rounded-3xl bg-[#1d2026]"
+        className="border-y-2 border-x shadow-white shadow-sm w-[85%] mx-auto xss:w-[70%] md:w-[60%] lg:w-[40%] mt-[7rem] my-[3rem] pt-2 p-1 rounded-3xl bg-[#101010]"
       >
         <Connect2 />
         <ContactForm ref={FormRef} />
@@ -59,7 +59,7 @@ const Emailing = () => {
           <PopMessage message={message}/>
         </div>
         <button
-          className="font-roboto m-1 my-2 bg-gradient-to-b from-[#71ded1] transition-all duration-700 hover:to-[#16867a] to-[#289689] p-2 md:p-4 text-white uppercase font-bold tracking-widest block border rounded-3xl w-[99%]"
+          className="font-roboto m-1 my-2 bg-gradient-to-b from-[#fff] transition-all duration-700 hover:to-[#101010] to-[#313131] p-2 md:p-4 text-white uppercase font-bold tracking-widest block border rounded-3xl w-[99%]"
           type="submit"
           onClick={(e) => {
             e.preventDefault();

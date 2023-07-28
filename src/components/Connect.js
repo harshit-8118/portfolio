@@ -1,7 +1,7 @@
 function Connect() {
   return (
     <div className="flex flex-wrap space-x-[0.1rem] md:space-x-4 overflow-hidden py-4 justify-center">
-      <p className="font-alegreya text-[#177b6f] place-self-center">
+      <p className="font-alegreya text-[#fff] place-self-center">
         ConnectMe:{" "}
       </p>
       <a

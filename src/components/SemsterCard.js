@@ -4,7 +4,7 @@ function SemsterCard() {
   return (
     <div
       id="semesterCard"
-      className="flex flex-col justify-center bg-[#1d2026]"
+      className="flex flex-col justify-center bg-[#101010]"
     >
       <div
         data-aos="fade-up"
@@ -16,7 +16,7 @@ function SemsterCard() {
         Other than my personal syllabus and learning, The academic coursework were there to enhance my knowledge. Those course-outcomes helped me also a lot to connect my skills with my learning.
       </div>
       <div className="flex flex-wrap justify-center py-2 mb-4 xsx:space-x-1 text-white space-y-2 xsx:space-y-0 font-roboto">
-        <div data-aos="fade-right" data-aos-duration="600" className="flex justify-evenly border border-slate-400 rounded-3xl p-2 space-x-8 group bg-[#1d2026] hover:bg-gradient-to-r from-[#8bede1] to-[#3fad99] hover:text-black hover:font-bold">
+        <div data-aos="fade-right" data-aos-duration="600" className="flex justify-evenly border border-slate-400 rounded-3xl p-2 space-x-8 group bg-[#1f1e1e] hover:bg-gradient-to-r from-[#f2e2b0] to-[#fec407] hover:text-black hover:font-bold">
           <div className="flex flex-col">
             <span>semester1</span>
             <span>semester2</span>
@@ -38,7 +38,7 @@ function SemsterCard() {
             </span>
           </div>
         </div>
-        <div data-aos="fade-left" data-aos-duration="650" className="flex justify-evenly border border-slate-400 rounded-3xl p-2 space-x-8 group bg-[#1d2026] hover:bg-gradient-to-l from-[#8bede1] to-[#3fad99] hover:text-black hover:font-bold">
+        <div data-aos="fade-left" data-aos-duration="650" className="flex justify-evenly border border-slate-400 rounded-3xl p-2 space-x-8 group bg-[#1f1e1e] hover:bg-gradient-to-r from-[#fec407] to-[#f2e2b0] hover:text-black hover:font-bold">
           <div className="flex flex-col">
             <span>semester5</span>
             <span>semester6</span>

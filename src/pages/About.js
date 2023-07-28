@@ -10,7 +10,7 @@ function About() {
       <div className="mt-32 border"></div>
       <div
         id="aboutContainer"
-        className="aboutContainer flex justify-evenly flex-wrap p-2 bg-[#f2f2f2] py-8"
+        className="aboutContainer flex justify-evenly flex-wrap p-2 bg-[#1e1f1f] py-8"
       >
         <div
           data-aos="fade-right"
@@ -35,9 +35,9 @@ function About() {
           id="about-card"
           data-aos="fade-left"
           data-aos-duration="400"
-          className="about-card my-auto group transition-all duration-500 hover:bg-[#1d2026]"
+          className="about-card my-auto group transition-all text-white duration-500"
         >
-          <div className="flex flex-col space-y-3  group-hover:text-white font-alegreya">
+          <div className="flex flex-col space-y-3 font-alegreya">
             <span>Name</span>
             <span>Email</span>
             <span>Date of Birth</span>
@@ -45,7 +45,7 @@ function About() {
             <span>Intermediate</span>
             <span>Graduation</span>
           </div>
-          <div className="flex flex-col space-y-3 group-hover:text-white font-alegreya">
+          <div className="flex flex-col space-y-3 font-alegreya">
             <span className="w-[15rem]">: Harshit Shukla</span>
             <span className="w-[15rem]">: hharshit2112@gmail.com</span>
             <span className="w-[15rem] oldstyle-nums">: 16 Feb, 2000</span>
@@ -57,14 +57,14 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="bg-[#f2f2f2] py-4">
+      <div className="bg-[#fff] py-4">
         <DownloadResume />
       </div>
       <Connect />
-      <div className="text-center h-16 pt-6 text-sm text-white bg-slate-800 tracking-widest">
+      <div className="text-center h-16 pt-6 text-sm text-white bg-[#101010] tracking-widest">
         <FA icon={faCopyright} /> &nbsp;Harshit Shukla{" "}
         <span className="min-w-[16rem] pl-10 text-xs oldstyle-nums">
-          last updated: 21/06/2023
+          last updated: 28/07/2023
         </span>
       </div>
     </>

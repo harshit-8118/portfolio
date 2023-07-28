@@ -5,7 +5,7 @@ import TlTools from './TlTools'
 
 function TlToolsTechs() {
   return (
-    <div className="ToolsContainer divide-y group-hover:divide-[#004b4b]">
+    <div className="ToolsContainer divide-y group-hover:divide-[#white]">
       <div className="ToolLanguages">
         <TlLanguage />
       </div>

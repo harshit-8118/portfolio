@@ -17,6 +17,7 @@
       }
       body {
         min-width: 17rem;
+        background-color: #1e1f1f;
       }
       ::-webkit-scrollbar {
         width: 10px;
@@ -44,18 +45,11 @@
     <script>
       const func = () => {
         var header = document.getElementById("header");
-        var faIcons = document.querySelectorAll(".faIcons");
-        faIcons.forEach((icon) => {
-          icon.style.color = "#055959";
-        });
         header.style.height = "4rem";
-        header.style.backgroundColor = "#f2f2f2";
+        header.style.backgroundColor = "#000";
         var land = document.getElementById("landingpage");
         if (window.scrollY < 20) {
-          header.style.backgroundColor = "#46AEA2";
-          faIcons.forEach((icon) => {
-            icon.style.color = "#1D2026";
-          });
+          header.style.backgroundColor = "#101010";
           header.style.height = "8rem";
         }
       };

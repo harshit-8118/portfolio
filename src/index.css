@@ -7,10 +7,10 @@
 
 @layer components {
     .header{
-        @apply md:h-14 lg:h-8 lg:bg-[#46AEA2]
+        @apply md:h-14 lg:h-8 bg-[#101010] 
     }
     .header .faIcons{
-        @apply px-1 h-4 w-4 lg:h-5 lg:w-5 
+        @apply px-1 h-4 w-4 lg:h-5 lg:w-5 text-white
     }
     .header .page-links{
         @apply space-x-0 xsx:space-x-1 md:space-x-4
@@ -30,9 +30,9 @@
         lg:h-[32rem] lg:max-h-[32rem] 
         min-h-[15rem] 
         flex justify-evenly items-center 
-        z-40 
+        z-30
         overflow-hidden 
-        bg-[#46AEA2]
+        bg-[#101010]
     }
     .landing-page .landingDesc{
         @apply text-white z-40 p-2 xss:p-8 xss:leading-[1.5rem] md:leading-[2.5rem] leading-[1rem] lg:leading-[3rem]
@@ -59,7 +59,7 @@
         sm:space-x-6
     }
     #skills{
-        @apply bg-[#1D2026] text-white pt-8 pb-4
+        @apply bg-[#101010] text-white pt-8 pb-4
     }
     .ttheading {
         @apply font-roboto
@@ -74,8 +74,8 @@
         transition-all duration-500 hover:scale-[1.25]
     }
     .ttoutlet {
-        @apply border border-white hover:bg-[#46AEA2] transition-all duration-700 ease-in-out
-        text-center p-4 max-h-max m-4 rounded-lg hover:bg-gradient-to-r from-[#7ce7db] to-[#055959]
+        @apply border border-white transition-all duration-700 ease-in-out
+        text-center p-4 max-h-max m-4 rounded-lg hover:bg-gradient-to-r from-[#212121] to-[#0b0b0b]
     }
     .ToolLanguages, .ToolTechs {
         @apply  flex flex-col list-none m-2 space-y-3 justify-center xxs:w-auto
@@ -89,14 +89,14 @@
 
 
     .projectContainer {
-        @apply border flex justify-center flex-wrap min-w-[15rem]
+        @apply border flex justify-center flex-wrap min-w-[15rem] 
     }
     .projectContainer .projectCard{
         @apply border border-[#f2f2f2] p-1 m-4 rounded-3xl
-        space-y-0 relative flex flex-col
+        space-y-0 relative flex flex-col max-w-[25rem]
     }
     .projectContainer .projectCard .cardBody{
-        @apply border-b-2 border-[#46AEA2] mb-2 bg-[#1D2026] group-hover:text-[#1D2026] rounded-t-3xl 
+        @apply border-b border-[#f9df88] mb-2 bg-[#1D2026] group-hover:text-[#1D2026] rounded-t-3xl 
         
     }
     .projectContainer .projectCard .cardBodyBottom{
@@ -120,11 +120,11 @@
 
 
     #popup {
-        @apply fixed top-24 z-50 overflow-auto rounded-xl border-4 border-black
+        @apply fixed top-24 left-4 md:left-10 overflow-auto rounded-xl border-4 border-black
         w-[90%] h-[80%] bg-gradient-to-b from-[#1D2026] to-[#f2f2f2] shadow-2xl shadow-white
     }
     .popHeading {
-        @apply space-x-4 flex justify-center border-b-2 border-black bg-[#f2f2f2] h-16 pt-4
+        @apply space-x-4 flex justify-center border-b-2 border-black bg-[#101010] h-16 pt-4
     }
     .poptoolTechs {
         @apply flex list-none flex-wrap space-x-6 m-2
@@ -148,19 +148,19 @@
 
 
     #achievementContainer{
-        @apply flex flex-col justify-center flex-wrap mx-auto my-24 py-4 divide-y divide-[#46AEA2] border-y-8 border-[#3c887f] rounded-[5rem] 
+        @apply flex flex-col justify-center flex-wrap mx-auto my-24 py-4 divide-y divide-[#fff] border-y-8 border-[#fff] rounded-[5rem] bg-[#101010]
     }
     .achiCard{
         @apply flex flex-wrap justify-center lg:space-x-10 my-2
     }
     .achiImg{
-        @apply border border-cyan-300 rounded-lg overflow-hidden self-center
+        @apply rounded-lg overflow-hidden self-center
     }
     .achiImg img{
         @apply mx-auto max-w-[12rem] max-h-[12rem]  rounded-lg
     }
     .achiLower {
-        @apply border border-white self-center flex flex-col space-y-[0.1rem] divide-y text-slate-800 text-sm w-[15.9rem]
+        @apply self-center flex flex-col space-y-[0.1rem] divide-y text-sm w-[15.9rem]
     }
     .achiPlatform {
         @apply h-10 p-1 text-center text-lg
@@ -168,7 +168,7 @@
 
 
     #photo-about{
-        @apply border border-white bg-[#1d2026] rounded-[3rem]
+        @apply border border-white bg-[#101010] rounded-[3rem]
     }
     #about-img{
         @apply border-white border w-[10rem] h-[10rem] rounded-full overflow-hidden p-1 my-2
@@ -178,7 +178,7 @@
         @apply m-1 text-xs tracking-wide leading-5 xss:text-sm min-w-[16rem] max-w-[26rem] rounded-[3rem] p-2 text-white font-diphel
     }
     #about-card{
-        @apply border-2 overflow-x-auto border-[#46aea2] w-auto min-w-[16rem] max-w-[24rem] flex space-x-4 p-4 h-fit rounded-[3rem]
+        @apply overflow-x-auto border-[#e2e1e1] shadow-md shadow-white w-auto min-w-[16rem] max-w-[24rem] flex space-x-4 p-4 h-fit rounded-[3rem]
     }
 
 
@@ -186,12 +186,12 @@
         @apply m-1
     }
     #form input {
-        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#46aea2] m-1 py-2 md:py-3 px-4 tracking-wide font-semibold text-[10px] md:text-[15px] text-white bg-[#333539] font-roboto
+        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#3d3838] m-1 py-2 md:py-3 px-4 tracking-wide font-semibold text-[10px] md:text-[15px] text-white bg-[#1e1f1f] font-roboto
         focus:outline-none focus:tracking-widest
         placeholder:text-slate-400 placeholder:font-semibold placeholder:tracking-widest
     }
     #form textarea {
-        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#46aea2] m-1 py-2 md:py-3 px-4 tracking-wide font-semibold text-[10px] md:text-[15px] resize-y min-h-[6rem] bg-[#333539] font-roboto
+        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#3d3838] m-1 py-2 md:py-3 px-4 tracking-wide font-semibold text-[10px] md:text-[15px] resize-y min-h-[6rem] bg-[#1e1f1f] font-roboto
         focus:outline-none  focus:tracking-widest text-white
         placeholder:text-slate-400 placeholder:font-semibold placeholder:tracking-widest
     }
@@ -200,11 +200,13 @@
 
 
     .footer-links {
-        @apply text-slate-600 hover:text-slate-800 hover:underline decoration-slate-400 font-thin
+        @apply text-[#101010] hover:text-slate-800 hover:underline decoration-slate-400 font-thin
     }
    
 }
 
 @layer utilities {
-    
+    .outer-popup{
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    }
 }

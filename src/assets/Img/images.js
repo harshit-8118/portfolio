@@ -75,3 +75,10 @@ export const tw5 = require('./project-images/tailwindCss/5.png')
 export const tw6 = require('./project-images/tailwindCss/6.png')
 export const tw7 = require('./project-images/tailwindCss/7.png')
 export const tw8 = require('./project-images/tailwindCss/8.png')
+
+// netflix images
+export const mf1 = require('./project-images/movieflixo/1.png')
+export const mf2 = require('./project-images/movieflixo/2.png')
+export const mf3 = require('./project-images/movieflixo/3.png')
+export const mf4 = require('./project-images/movieflixo/4.png')
+export const mf5 = require('./project-images/movieflixo/5.png')

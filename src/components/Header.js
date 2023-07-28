@@ -10,19 +10,19 @@ import {
   faShield,
 } from "@fortawesome/free-solid-svg-icons";
 
-const resumeLink = "https://drive.google.com/file/d/11GLA8UeBC5Lto9NyYyvvfVoZBofkS0hF/view?usp=sharing";
+const resumeLink = "https://drive.google.com/file/d/1uwhNchzJXuAw9pyP5XmDjiSDnierJvMk/view?usp=sharing";
 
 function Header() {
   return (
     <div>
       <nav
         id="header"
-        className="header flex justify-center h-32 items-center top-0 z-50 opacity-100 transition-all duration-300 fixed w-[100%] min-w-[10rem]"
+        className="header flex justify-center h-32 items-center top-0 z-40 opacity-100 transition-all duration-300 fixed w-[100%] min-w-[10rem]"
       >
         <div className="p-2 ml-4 transition-all duration-300 group hover:border">
           <a target="_blank" href={resumeLink}>
             <FA icon={faFileArrowDown} shake className="faIcons" />
-            <p className="inline text-sm font-diphel group-hover:text-[#166e64]">
+            <p className="inline text-sm font-diphel text-white group-hover:text-[#dedede]">
               Resume
             </p>
           </a>
@@ -34,7 +34,7 @@ function Header() {
                 icon={faHome}
                 className="faIcons transition-all duration-300 group-hover:h-[1.40rem] hover:-translate-y-[0.10rem]"
               />
-              <p className="hidden xss:inline transition-all duration-300 text-sm group-hover:text-[#03423a]">
+              <p className="hidden text-white xss:inline transition-all duration-300 text-sm group-hover:text-[#dedede]">
                 home
               </p>
             </Link>
@@ -45,7 +45,7 @@ function Header() {
                 icon={faUser}
                 className="faIcons transition-all duration-300 group-hover:h-[1.40rem] hover:-translate-y-[0.10rem]"
               />
-              <p className="hidden xss:inline transition-all duration-300 text-sm group-hover:text-[#03423a]">
+              <p className="hidden text-white xss:inline transition-all duration-300 text-sm group-hover:text-[#dedede]">
                 about me
               </p>
             </Link>
@@ -57,7 +57,7 @@ function Header() {
                 beat
                 className="faIcons transition-all duration-300 group-hover:h-[1.40rem] hover:-translate-y-[0.10rem]"
               />
-              <p className="hidden xss:inline transition-all duration-300 text-sm group-hover:text-[#03423a]">
+              <p className="hidden text-white xss:inline transition-all duration-300 text-sm group-hover:text-[#dedede]">
                 contact
               </p>
             </Link>
@@ -70,7 +70,7 @@ function Header() {
                 icon={faStar}
                 className="px-1 h-4 w-4 lg:h-5 lg:w-5 transition-all duration-300 group-hover:h-[1.40rem] hover:-translate-y-[0.10rem] text-[#F7CF47]"
               />
-              <p className="hidden sm:inline transition-all duration-300 text-sm group-hover:text-[#03423a]">
+              <p className="hidden text-white sm:inline transition-all duration-300 text-sm group-hover:text-[#dedede]">
                 skills
               </p>
             </a>
@@ -81,7 +81,7 @@ function Header() {
                 icon={faShield}
                 className="px-1 h-4 w-4 lg:h-5 lg:w-5 transition-all duration-300 group-hover:h-[1.40rem] hover:-translate-y-[0.10rem] text-[#F7CF47]"
               />
-              <p className="hidden sm:inline transition-all duration-300 text-sm group-hover:text-[#03423a]">
+              <p className="hidden text-white sm:inline transition-all duration-300 text-sm group-hover:text-[#dedede]">
                 projects
               </p>
             </a>
@@ -92,7 +92,7 @@ function Header() {
                 icon={faTrophy}
                 className="px-1 h-4 w-4 lg:h-5 lg:w-5 transition-all duration-300 group-hover:h-[1.40rem] hover:-translate-y-[0.10rem] text-[#F7CF47]"
               />
-              <p className="hidden sm:inline transition-all duration-300 text-sm group-hover:text-[#03423a]">
+              <p className="hidden text-white sm:inline transition-all duration-300 text-sm group-hover:text-[#dedede]">
                 achievements
               </p>
             </a>

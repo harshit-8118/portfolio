@@ -3,7 +3,7 @@ import Popup from "./Popup";
 import { FontAwesomeIcon as FA } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
-  faArrowUpRightFromSquare,
+  faEye,
 } from "@fortawesome/free-solid-svg-icons";
 import { projects } from "./ProjectsDesc";
 
@@ -20,14 +20,14 @@ function Projects() {
   };
 
   return (
-    <div className="bg-[#1D2026] text-white">
+    <div className="bg-[#101010] text-white">
       <div
         id="popupclose"
-        className={`w-16 h-16 lg:w-24 lg:h-24 cursor-pointer top-0 right-0 z-50 fixed ${hidden} hover:bg-[#46AEA2] rounded-full group`}
+        className={`w-16 h-16 cursor-pointer top-0 md:right-20 right-10 z-50 fixed ${hidden} hover:bg-[#101010] rounded-full group`}
         onClick={popOpen}
       >
-        <div className="animate-pulse w-12 translate-y-8 lg:w-20 lg:translate-y-11 translate-x-2 rotate-45 text-center z-50 border-2 border-black group-hover:animate-none group-hover:border-white"></div>
-        <div className="animate-pulse w-12 translate-y-7 lg:w-20 lg:translate-y-10 translate-x-2 -rotate-45 text-center z-50 border-2 border-black group-hover:animate-none group-hover:border-white"></div>
+        <div className="w-12 translate-y-8 translate-x-2 rotate-45 text-center z-50 border-2 border-red-700 group-hover:animate-none"></div>
+        <div className="w-12 translate-y-7 translate-x-2 -rotate-45 text-center z-50 border-2 border-red-700 group-hover:animate-none"></div>
       </div>
       <div id="" data-aos="fade-up" className=" text-center text-3xl font-alegreya font-bold tracking-[0.5rem] py-8">
         MY PROJECTS
@@ -39,7 +39,7 @@ function Projects() {
         <Popup data={data} hidden={hidden} />
         {projects.map((project, ind) => (
           <div data-aos={ind%2 == 0 ? 'fade-up-right': 'fade-up-left'} data-aos-duration="400" key={ind} className="projectCard group">
-            <div className="p-[.15rem] cardBody flex flex-col group-hover:bg-gradient-to-r from-[#7ce7db] to-[#055959] group-hover:text-[#1D2026]">
+            <div className="p-[.15rem] cardBody flex flex-col text-[#fff] group-hover:bg-gradient-to-r from-[#212121] to-[#0b0b0b] group-hover:text-[#fff]">
               <h1 className="font-alegreya text-2xl py-2 xsm:text-3xl lg:text-4xl">
                 {project.project_name}
               </h1>
@@ -65,18 +65,18 @@ function Projects() {
                   }}
                 >
                   <i className="text-white group-hover:text-[#1d43de]">
-                    <FA icon={faArrowUpRightFromSquare} />
+                    <FA icon={faEye} />
                   </i>
                 </button>
               </div>
             </div>
-            <div className="space-y-1 cardBodyBottom group-hover:text-[#092d28] group-hover:bg-gradient-to-r from-[#7ce7db] to-[#055959]">
+            <div className="space-y-1 cardBodyBottom group-hover:text-[#fff] group-hover:bg-gradient-to-r from-[#212121] to-[#0b0b0b]">
               <div className="cardTechsMain">
                 <p className="pt-1 p-[.15rem] text-sm w-[6rem] border border-slate-700 xsm:text-base xsm:w-[6.8rem] mr-[0.1rem] group-hover:border-white font-roboto font-semibold">
                   Specifications
                 </p>
                 :
-                <div className="p-[.15rem] border border-slate-700 flex justify-center space-x-1 divide-x-2 divide-slate-700 text-sm xsm:text-base group-hover:border-white group-hover:divide-white font-roboto group-hover:font-alegreya">
+                <div className="p-[.15rem] border border-slate-700 flex-wrap flex justify-center space-x-1 divide-x-2 divide-slate-700 text-sm xsm:text-base group-hover:border-white group-hover:divide-white font-roboto group-hover:font-alegreya">
                   {project.technologies.map((techs, ind2) => (
                     <li key={ind2} className="p-1">
                       {techs}

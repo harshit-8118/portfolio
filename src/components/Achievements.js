@@ -18,11 +18,11 @@ function Achievements() {
       <div
         id="projects"
         data-aos="fade-up"
-        className="flex flex-col text-center text-2xl xss:text-3xl font-alegreya font-bold tracking-[0.3rem] py-8"
+        className="flex flex-col text-center text-2xl xss:text-3xl font-alegreya font-bold tracking-[0.3rem] py-8 text-white"
       >
         MY ACHIEVEMENTS...
       </div>
-      <div className="tracking-normal text-sm text-center -mt-6 font-pathway mx-4">
+      <div className="text-white tracking-normal text-sm text-center -mt-6 font-pathway mx-4">
         I passionately give my time to DSA problems. it's ofcourse not easy but with time I am fond of it with ease.
       </div>
       <div id="achievementContainer" className="">
@@ -41,8 +41,8 @@ function Achievements() {
                   <img src={achievement.img} />
                 </a>
               </div>
-              <div className="achiLower group-hover:border-transparent">
-                <div className="achiPlatform uppercase tracking-wider font-righteous text-[#1d2026] h-8">
+              <div className="achiLower group-hover:border-transparent text-white">
+                <div className="achiPlatform uppercase tracking-wider font-righteous text-[#fff] h-8">
                   {achievement.platform}
                 </div>
                 <div className="achiId p-1 flex space-x-4 h-8 mx-auto">
@@ -59,13 +59,13 @@ function Achievements() {
                 </div>
                 <div className="achiProbSolve p-1 flex space-x-4 h-8 mx-auto font-pathway">
                   <h1>Problems Solved : </h1>
-                  <p className="oldstyle-nums font-semibold text-slate-800 tracking-widest group-hover:text-[1rem]">
+                  <p className="oldstyle-nums font-semibold tracking-widest group-hover:text-[1rem]">
                     {achievement.problem_solved}
                   </p>
                 </div>
                 <div className="achiProbSolve p-1 flex space-x-4 h-8 mx-auto font-pathway">
                   <h1>Maximum Rating : </h1>
-                  <p className="oldstyle-nums font-semibold text-slate-800 tracking-widest group-hover:text-[1rem]">
+                  <p className="oldstyle-nums font-semibold tracking-widest group-hover:text-[1rem]">
                     {achievement.max_rating.replaceJSXfunc(
                       "-",
                       <FA
