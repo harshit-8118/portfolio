@@ -1,4 +1,4 @@
-const langs = ["C", "C++", "javascript", "php"];
+const langs = ["C", "C++", "Python"];
 
 function TlLanguage() {
   return (

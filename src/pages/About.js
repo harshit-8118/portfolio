@@ -22,13 +22,16 @@ function About() {
             <img src={myphoto} />
           </div>
           <div id="about-desc" className="about-desc whitespace-pre-wrap">
-            Hi, My name is Harshit Shukla. I am from Lucknow. I am a final year
-            student at Bundelkhand Institute of Engineering and Technology,
-            Jhansi pursuing BTech in Computer Science and Engineering. I am
-            currently working on personal project in MERN stack. I have
-            sharpened my skills in Data Structures and Algorithms since 2+years.
-            I used to practice DSA problems mainly on leetcode and GFG. I am
-            open to collaborate in full stack web development.
+            Greetings! I'm Harshit Shukla, a final year Computer Science and
+            Engineering student at Bundelkhand Institute of Engineering and
+            Technology in Jhansi. Currently, my focus is on learning and
+            implementing Machine Learning, actively engaged in ML projects.
+            Alongside, I've accomplished numerous learning projects in the MERN
+            stack, refining my full-stack web development skills. Over the past
+            2+ years, I've honed my proficiency in Data Structures and
+            Algorithms through dedicated practice on platforms like LeetCode and
+            GeeksforGeeks. Eager to collaborate and create something
+            extraordinary in the realm of full-stack web development
           </div>
         </div>
         <div

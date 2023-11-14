@@ -10,7 +10,7 @@ import {
   faShield,
 } from "@fortawesome/free-solid-svg-icons";
 
-const resumeLink = "https://drive.google.com/file/d/11GLA8UeBC5Lto9NyYyvvfVoZBofkS0hF/view?usp=sharing";
+const resumeLink = "https://drive.google.com/file/d/14es321EcXkN2cOiw54w5wqAWia_eM_OJ/view?usp=sharing";
 
 function Header() {
   return (

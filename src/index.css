@@ -104,11 +104,11 @@
         
     }
     .projectContainer .projectCard .cardTechsMain{
-        @apply flex list-none space-x-4 text-sm
+        @apply flex list-none space-x-4 text-sm max-w-[25rem]
         xxs:text-sm 
     }
     .projectContainer .projectCard .cardTechsOther{
-        @apply flex list-none text-sm space-x-4 
+        @apply flex flex-wrap list-none text-sm space-x-4 
     }
     .projectContainer .projectCard .cardDesc{
         @apply mx-auto p-2 w-auto tracking-tight leading-5 text-center break-words font-roboto

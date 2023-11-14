@@ -49,7 +49,7 @@ function SemsterCard() {
             <span>
               {SA.sem5} <span className="text-xs">cgpa</span>
             </span>
-            <span>{SA.sem6}</span>
+            <span>{SA.sem6} <span className="text-xs">cgpa</span></span>
             <span>{SA.sem7}</span>
             <span>{SA.sem8}</span>
           </div>

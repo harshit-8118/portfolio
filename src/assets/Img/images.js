@@ -1,19 +1,4 @@
 // skills images
-export const html = require('./images/html.png')
-export const css = require('./images/css.png')
-export const git = require('./images/git.png')
-export const javascript = require('./images/javascript.png')
-export const nodejs = require('./images/nodejs.png')
-export const mongodb = require('./images/mongodb.png')
-export const mysql = require('./images/mysql.png')
-export const react = require('./images/react.png')
-export const cpp = require('./images/cpp.png')
-export const php = require('./images/php.png')
-export const tailwind = require('./images/tailwind.png')
-export const jquery = require('./images/jquery.png')
-export const express = require('./images/express.png')
-export const bootstrap = require('./images/bootstrap.png')
-export const vscode = require('./images/vscode.png')
 export const myphoto = require('./images/myphoto.jpg')
 
 // achievements images
@@ -75,3 +60,20 @@ export const tw5 = require('./project-images/tailwindCss/5.png')
 export const tw6 = require('./project-images/tailwindCss/6.png')
 export const tw7 = require('./project-images/tailwindCss/7.png')
 export const tw8 = require('./project-images/tailwindCss/8.png')
+
+// netflix images
+export const mf1 = require('./project-images/movieflixo/1.png')
+export const mf2 = require('./project-images/movieflixo/2.png')
+export const mf3 = require('./project-images/movieflixo/3.png')
+export const mf4 = require('./project-images/movieflixo/4.png')
+export const mf5 = require('./project-images/movieflixo/5.png')
+
+// taskIO images
+export const tio1 = require('./project-images/TaskIO/1.png')
+export const tio2 = require('./project-images/TaskIO/2.png')
+export const tio3 = require('./project-images/TaskIO/3.png')
+export const tio4 = require('./project-images/TaskIO/4.png')
+export const tio5 = require('./project-images/TaskIO/5.png')
+export const tio6 = require('./project-images/TaskIO/6.png')
+export const tio7 = require('./project-images/TaskIO/7.png')
+export const tio8 = require('./project-images/TaskIO/8.png')

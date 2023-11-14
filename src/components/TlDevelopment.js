@@ -2,11 +2,12 @@ const webTechs = [
   "html",
   "css",
   "javascript",
-  "bootstrap",
+  "Php",
   "react",
   "express",
   "nodejs",
   "jquery",
+  "bootstrap",
   "tailwind",
 ];
 

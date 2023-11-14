@@ -69,7 +69,7 @@ export const semesterAchievements = {
     sem3: '9.14',
     sem4: '8.57',
     sem5: '8.45',
-    sem6: '',
+    sem6: '8.33',
     sem7: '',
     sem8: '',
 }
