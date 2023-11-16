@@ -100,15 +100,15 @@
         
     }
     .projectContainer .projectCard .cardBodyBottom{
-        @apply border-y h-44 mb-2 bg-[#1d2026] rounded-b-3xl text-white  overflow-hidden
+        @apply border-y  max-w-[22rem] h-44 mb-2 bg-[#1d2026] rounded-b-3xl text-white  overflow-hidden
         
     }
     .projectContainer .projectCard .cardTechsMain{
-        @apply flex list-none space-x-4 text-sm max-w-[25rem]
+        @apply flex list-none space-x-4 text-sm
         xxs:text-sm 
     }
     .projectContainer .projectCard .cardTechsOther{
-        @apply flex flex-wrap list-none text-sm space-x-4 
+        @apply flex list-none text-sm space-x-4 
     }
     .projectContainer .projectCard .cardDesc{
         @apply mx-auto p-2 w-auto tracking-tight leading-5 text-center break-words font-roboto
@@ -120,7 +120,7 @@
 
 
     #popup {
-        @apply fixed top-24 z-50 overflow-auto rounded-xl border-4 border-black
+        @apply fixed top-24 z-50 overflow-auto rounded-xl 
         w-[90%] h-[80%] bg-gradient-to-b from-[#1D2026] to-[#f2f2f2] shadow-2xl shadow-white
     }
     .popHeading {

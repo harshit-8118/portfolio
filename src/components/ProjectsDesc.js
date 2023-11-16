@@ -53,13 +53,23 @@ import {
   tio7,
   tio6,
   tio8,
+  fr1,
+  fr2,
+  fr3,
+  fr4,
+  fr5,
+  mr1,
+  mr2,
+  mr3,
+  mr4,
+  mr5,
 } from "../assets/Img/images";
 
 export const projects = [
   {
     project_name: "Task IO",
     technologies: ["MERN", "SASS", , "Firebase"],
-    other_techs: ["JWT authorization", "G-Search Engine"],
+    other_techs: ["JWT authorization", "G-Search Engine API"],
     description: `
     TASK IO
     November 2023
@@ -71,6 +81,26 @@ export const projects = [
     `,
     git_link: "https://github.com/harshit-8118/taskio",
     project_imgs: [tio1, tio2, tio3, tio4, tio5, tio6, tio7, tio8],
+  },
+  {
+    project_name: "Face Recognizer",
+    technologies: ["Python", "openCV"],
+    other_techs: ["haar-cascade classifier"],
+    description: `
+    The FACE-RECOGNIZER ( Machine Learning project ) is an advanced facial recognition system that leverages the power of OpenCV with Haar-Cascade for precise face detection and employs the K-Nearest Neighbors algorithm for accurate face recognition. The system operates through a meticulous two-phase process. In the training phase, the model is equipped with a dataset of labeled faces. This involves extracting intricate facial features and training a robust KNN model, enabling it to discern subtle nuances in facial characteristics. The detection phase showcases the model's prowess as it associates detected faces with corresponding names and gender labels. This innovative approach ensures a high level of accuracy in identifying individuals, making it a versatile solution for security, surveillance, and various applications where reliable face recognition is paramount. The integration of Haar-Cascade for detection and K-Nearest Neighbors for recognition establishes a comprehensive and efficient facial recognition system.
+    `,
+    git_link: "https://github.com/harshit-8118/FaceRecognizer",
+    project_imgs: [fr1, fr2, fr3, fr4, fr5],
+  },
+  {
+    project_name: "Movie Recommendation",
+    technologies: ["Python"],
+    other_techs: ["MovieLens-100k dataset"],
+    description: `
+    The "Movie Recommendation" project, developed using Python, introduces an intelligent system for suggesting movies based on user preferences. The core technology leveraged in this project is collaborative filtering, a powerful approach that enhances accuracy by considering the viewing history of similar users. The project relies on the MovieLens-100k dataset, a well-known and widely used benchmark in recommendation system research.
+    By tapping into the dataset's extensive collection of user ratings, the system can discern patterns and relationships between different movies, effectively tailoring recommendations to individual tastes. The Python programming language, with its versatility and extensive libraries like NumPy and pandas, forms the backbone of this recommendation engine. Whether you're a cinephile seeking new favorites or a developer interested in recommendation systems, the "Movie Recommendation" project offers a practical and insightful implementation that demonstrates the potential of collaborative filtering in delivering personalized movie suggestions.`,
+    git_link: "https://github.com/harshit-8118/MovieRecommendation",
+    project_imgs: [mr1, mr2, mr3, mr4, mr5],
   },
   {
     project_name: "Movieflixo",

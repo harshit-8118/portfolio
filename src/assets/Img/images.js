@@ -77,3 +77,17 @@ export const tio5 = require('./project-images/TaskIO/5.png')
 export const tio6 = require('./project-images/TaskIO/6.png')
 export const tio7 = require('./project-images/TaskIO/7.png')
 export const tio8 = require('./project-images/TaskIO/8.png')
+
+// face recognizer image
+export const fr1 = require('./project-images/Face-Recognizer/1.png');
+export const fr2 = require('./project-images/Face-Recognizer/2.png');
+export const fr3 = require('./project-images/Face-Recognizer/3.png');
+export const fr4 = require('./project-images/Face-Recognizer/4.png');
+export const fr5 = require('./project-images/Face-Recognizer/5.png');
+
+// movie recommendation image
+export const mr1 = require('./project-images/MovieRecommendation/1.png');
+export const mr2 = require('./project-images/MovieRecommendation/2.png');
+export const mr3 = require('./project-images/MovieRecommendation/3.png');
+export const mr4 = require('./project-images/MovieRecommendation/4.png');
+export const mr5 = require('./project-images/MovieRecommendation/5.png');

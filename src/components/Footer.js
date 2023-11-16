@@ -4,6 +4,19 @@ import { FontAwesomeIcon as FA } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  const handleScroll = () => {
+    const initialScrollY = window.scrollY;
+    const finalScrollY = 0;
+    const n = initialScrollY < 2400 ? 5 : 10;
+    const steps = initialScrollY < 2400 ? 80 : 50;
+    for (let i = 0; i <= n; i++) {
+      setTimeout(() => {
+        const newScrollY =
+          initialScrollY + (finalScrollY - initialScrollY) * (i / n);
+        window.scrollTo(0, newScrollY);
+      }, i * steps);
+    }
+  };
   return (
     <>
       <div
@@ -11,7 +24,10 @@ function Footer() {
         className="bg-slate-200 border-slate-300 shadow-md border"
       >
         <div id="footer-top" className=" flex justify-around">
-          <div id="social-media" className="flex space-x-1 m-1 p-1 xsx:space-x-4 xsx:m-4 xsx:p-4">
+          <div
+            id="social-media"
+            className="flex space-x-1 m-1 p-1 xsx:space-x-4 xsx:m-4 xsx:p-4"
+          >
             <a
               data-aos="fade-right"
               data-aos-delay="200"
@@ -189,16 +205,16 @@ function Footer() {
           </div>
         </div>
       </div>
-      <a
-        href="#top"
-        className="fixed bottom-20 z-40 right-1 w-8 h-8 rounded-full text-center pt-1 text-white bg-[#09776a]"
+      <span
+        className="fixed cursor-pointer bottom-20 z-40 right-1 w-10 h-10 rounded-[0.3rem] text-center pt-2 text-white bg-[#09776a]"
+        onClick={handleScroll}
       >
         <FA icon={faArrowUp} />
-      </a>
+      </span>
       <div className="text-center h-16 pt-6 text-sm text-white bg-slate-800 tracking-widest">
         <FA icon={faCopyright} /> &nbsp;Harshit Shukla{" "}
         <span className="min-w-[16rem] pl-10 text-xs oldstyle-nums">
-          last updated: 21/06/2023
+          last updated: 16/11/2023
         </span>
       </div>
     </>

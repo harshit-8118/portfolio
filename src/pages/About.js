@@ -67,7 +67,7 @@ function About() {
       <div className="text-center h-16 pt-6 text-sm text-white bg-slate-800 tracking-widest">
         <FA icon={faCopyright} /> &nbsp;Harshit Shukla{" "}
         <span className="min-w-[16rem] pl-10 text-xs oldstyle-nums">
-          last updated: 21/06/2023
+          last updated: 16/11/2023
         </span>
       </div>
     </>

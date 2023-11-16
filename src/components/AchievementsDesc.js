@@ -7,7 +7,7 @@ export const achievements = [
         platform: 'leetcode',
         id: 'hharshit8118',
         link: 'https://leetcode.com/hharshit8118/',
-        problem_solved: '560+',
+        problem_solved: '650+',
         max_rating: '1794',
         other: ['4 monthly badges', '5 study plan badges', '100 days consistency badge']
     }, 
@@ -17,7 +17,7 @@ export const achievements = [
         platform: 'GFG',
         id: 'hharshit8118',
         link: 'https://auth.geeksforgeeks.org/user/hharshit8118',
-        problem_solved: '340+',
+        problem_solved: '475+',
         max_rating: '-',
         other: ['Improved 3 articles', '1000+ coding score']
     },
