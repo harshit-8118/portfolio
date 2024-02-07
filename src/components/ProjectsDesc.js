@@ -63,20 +63,71 @@ import {
   mr3,
   mr4,
   mr5,
+  icap1,
+  icap2,
+  icap3,
+  icap4,
+  icap5,
+  smnist1,
+  smnist2,
+  smnist3,
+  smnist4,
+  smnist5,
 } from "../assets/Img/images";
 
 export const projects = [
   {
+    project_name: "Image Captioning",
+    technologies: ["Python", "Flask", "Keras"],
+    other_techs: ["Glove.6B.50d", "ResNet50", "Flikr8K dataset"],
+    description: `
+    Image Captioning
+    JANUARY 2024
+    
+    - This project seamlessly incorporates a trained model into a Flask application, enabling the generation of insightful image captions. 
+
+    - The model, trained on Colab's T4 GPU accelerator, boasts an impressive 53% BLEU score for generated text. 
+
+    - It is engineered using the Flikr8k dataset and integrates the GloVe dataset to enhance vocabulary management in the embedding matrix. 
+
+    - Additionally, transfer learning is employed by incorporating the ResNet50 model to acquire feature vectors for training images, ensuring robust performance in image caption generation.
+    `,
+    git_link: "https://github.com/harshit-8118/Image_Captioning",
+    project_imgs: [icap1, icap2, icap3, icap4, icap5],
+  },
+  {
+    project_name: "MNIST Data Generation",
+    technologies: ["Python", "Keras"],
+    other_techs: ["Generative Adversarial Network", "DC-GAN"],
+    description: `
+    Synthetic Mnist Data Generation
+    DECEMBER 2023
+
+    - Utilizing a Generative Adversarial Network (GAN) and the Deep Convolutional GAN method, this project adeptly transforms noise into realistic data. 
+
+    - The generator model efficiently learns parameters for a 100-dimensional noise input, effectively generating 784-dimensional MNIST pixels. 
+
+    - Through successful fine-tuning over 50 epochs, the discriminator becomes proficient in discerning fake MNIST data, resulting in a robust and realistic data transformation process.
+    `,
+    git_link: "https://github.com/harshit-8118/Synthetic-MNIST-Data-Generation",
+    project_imgs: [smnist1, smnist2, smnist3, smnist4, smnist5],
+  },
+  {
     project_name: "Task IO",
-    technologies: ["MERN", "SASS", , "Firebase"],
+    technologies: ["MERN", "SASS", "Firebase"],
     other_techs: ["JWT authorization", "G-Search Engine API"],
     description: `
     TASK IO
     November 2023
+
     I successfully developed TaskIO, a comprehensive MERN stack project, in a remarkable two-week timeframe. TaskIO excels in task management, capturing details like title, description, and completion date. The integration of Google APIs enables efficient text search through associated URLs. The project seamlessly handles task operations with robust functionalities for updating, deleting, and creating tasks. Leveraging Firebase storage, TaskIO adeptly manages user profile pictures. The user experience is elevated with a visually appealing UI/UX design. Notably, the system incorporates advanced filtering options, allowing users to categorize tasks based on completion status (completed or incomplete) and priority (important or not important). TaskIO stands as a testament to rapid, effective development with a focus on functionality and aesthetics.
+
     - Using Firebase Storage for profile images was an excellent choice for media content in my web application. It proved itself very much effective performance, security, and URL generation for TASKIO.
+
     - Json Web Tokens are used for authentication and authorization purposes in TaskIO. It is a compact, URL-safe means of representing claims to be transferred between two parties. JWTs are typically used to securely registering user.
+
     - For better state management and global data sharing, Context API's are handled through out the project in TaskIO itself.
+
     HOSTING DOMAIN: 'https://mr-task8.netlify.app'
     `,
     git_link: "https://github.com/harshit-8118/taskio",
@@ -98,6 +149,7 @@ export const projects = [
     other_techs: ["MovieLens-100k dataset"],
     description: `
     The "Movie Recommendation" project, developed using Python, introduces an intelligent system for suggesting movies based on user preferences. The core technology leveraged in this project is collaborative filtering, a powerful approach that enhances accuracy by considering the viewing history of similar users. The project relies on the MovieLens-100k dataset, a well-known and widely used benchmark in recommendation system research.
+
     By tapping into the dataset's extensive collection of user ratings, the system can discern patterns and relationships between different movies, effectively tailoring recommendations to individual tastes. The Python programming language, with its versatility and extensive libraries like NumPy and pandas, forms the backbone of this recommendation engine. Whether you're a cinephile seeking new favorites or a developer interested in recommendation systems, the "Movie Recommendation" project offers a practical and insightful implementation that demonstrates the potential of collaborative filtering in delivering personalized movie suggestions.`,
     git_link: "https://github.com/harshit-8118/MovieRecommendation",
     project_imgs: [mr1, mr2, mr3, mr4, mr5],
@@ -116,14 +168,19 @@ export const projects = [
     other_techs: ["JWT authorization"],
     description: `
     Movieflixo
-    Jun 2023 - Jul 2023Jun 2023 - Jul 2023
+    Jun 2023 - Jul 2023
+
     Movieflixo | Netflix Clone project is an ambitious web application that replicates the core functionalities of the popular streaming platform Netflix. 
     It has been developed over a span of 1.5 months, this project includes the MERN stack (MongoDB, Express.js, React.js, Node.js), JWT (JSON Web Tokens) for authorization, and Firebase integration. 
     Through this project, I have not only honed my technical skills but also demonstrated my deep understanding of bug resolving and best coding practices. 
     - Using Firebase Storage for image and video links was an excellent choice for hosting and serving media content in my web application. It proved itself very much effective performance, security, and URL generation for movieflixo.
+
     - Json Web Tokens are used for authentication and authorization purposes in movieflixo. It is a compact, URL-safe means of representing claims to be transferred between two parties. JWTs are typically used to securely registering user.
+
     - An admin-panel is also developed in same technologies for managing users, movies, movie lists, series, series lists and user-registeration analytics per month.
+    
     - For better state management and global data sharing, Context API's are handled through out the project in movieflixo-admin-panel and movieflixo itself.
+
     HOSTING DOMAIN: 'https://movieflixo.netlify.app'
     ADMIN-PANEL HOSTING DOMAIN: 'https://movieflixo-admin.netlify.app'
     `,

@@ -1,5 +1,5 @@
 const DownloadableResumeLink =
-  "https://drive.google.com/uc?export=download&id=14es321EcXkN2cOiw54w5wqAWia_eM_OJ";
+"https://drive.google.com/uc?export=download&id=1BAjMLeTVoz2GF0CHc0JU7xMJxQ7sGkGA";
 
 function DownloadResume() {
   return (

@@ -6,6 +6,7 @@ import Achievements from "../components/Achievements";
 import SemsterCard from "../components/SemsterCard";
 import Underline from "../components/Underline";
 import DownloadResume from "../components/DownloadResume";
+import Experience from "../components/Experiences";
 
 function Home() {
   return (
@@ -14,6 +15,10 @@ function Home() {
       <Landing />
       </div>
      <div className="h-[6rem]"></div>
+      <Underline />
+      <div id="skills" className="">
+        <Experience />
+      </div>
       <Underline />
       <div id="skills" className="">
         <ToolTechnology />

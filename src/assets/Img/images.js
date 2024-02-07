@@ -91,3 +91,18 @@ export const mr2 = require('./project-images/MovieRecommendation/2.png');
 export const mr3 = require('./project-images/MovieRecommendation/3.png');
 export const mr4 = require('./project-images/MovieRecommendation/4.png');
 export const mr5 = require('./project-images/MovieRecommendation/5.png');
+
+// ImageCaptioning images
+export const icap1 = require('./project-images/ImageCaptioning/1.png')
+export const icap2 = require('./project-images/ImageCaptioning/2.png')
+export const icap3 = require('./project-images/ImageCaptioning/3.png')
+export const icap4 = require('./project-images/ImageCaptioning/4.png')
+export const icap5 = require('./project-images/ImageCaptioning/5.png')
+
+
+// Synthetic mnist data generation images
+export const smnist1 = require('./project-images/SyntheticMnistDataGeneration/1.png')
+export const smnist2 = require('./project-images/SyntheticMnistDataGeneration/2.png')
+export const smnist3 = require('./project-images/SyntheticMnistDataGeneration/3.png')
+export const smnist4 = require('./project-images/SyntheticMnistDataGeneration/4.png')
+export const smnist5 = require('./project-images/SyntheticMnistDataGeneration/5.png')

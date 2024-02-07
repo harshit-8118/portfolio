@@ -77,6 +77,10 @@
         @apply border border-white hover:bg-[#46AEA2] transition-all duration-700 ease-in-out
         text-center p-4 max-h-max m-4 rounded-lg hover:bg-gradient-to-r from-[#7ce7db] to-[#055959]
     }
+    .ttoutlet_exp {
+        @apply border border-white bg-[#46AEA2] transition-all duration-700 ease-in-out
+        text-center p-4 max-h-max m-4 rounded-lg hover:bg-gradient-to-r from-[#7ce7db] to-[#055959]
+    }
     .ToolLanguages, .ToolTechs {
         @apply  flex flex-col list-none m-2 space-y-3 justify-center xxs:w-auto
     } 

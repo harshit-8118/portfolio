@@ -1,7 +1,8 @@
-import TlLanguage from './TlLanguage'
-import TlDevelopment from './TlDevelopment'
-import TlDatabase from './TlDatabase'
-import TlTools from './TlTools'
+import TlLanguage from "./TlLanguage";
+import TlDevelopment from "./TlDevelopment";
+import TlDatabase from "./TlDatabase";
+import TlTools from "./TlTools";
+import TlFrameworks_Libraries from "./TlFrameworks&Libraries";
 
 function TlToolsTechs() {
   return (
@@ -11,6 +12,9 @@ function TlToolsTechs() {
       </div>
       <div className="ToolDevelopment">
         <TlDevelopment />
+      </div>
+      <div className="ToolDevelopment">
+        <TlFrameworks_Libraries />
       </div>
       <div className="ToolDatabase">
         <TlDatabase />

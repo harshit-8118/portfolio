@@ -22,16 +22,17 @@ function About() {
             <img src={myphoto} />
           </div>
           <div id="about-desc" className="about-desc whitespace-pre-wrap">
-            Greetings! I'm Harshit Shukla, a final year Computer Science and
+            Greetings! I'm Harshit Shukla, a final-year Computer Science and
             Engineering student at Bundelkhand Institute of Engineering and
-            Technology in Jhansi. Currently, my focus is on learning and
-            implementing Machine Learning, actively engaged in ML projects.
-            Alongside, I've accomplished numerous learning projects in the MERN
-            stack, refining my full-stack web development skills. Over the past
-            2+ years, I've honed my proficiency in Data Structures and
-            Algorithms through dedicated practice on platforms like LeetCode and
-            GeeksforGeeks. Eager to collaborate and create something
-            extraordinary in the realm of full-stack web development
+            Technology in Jhansi. With a focus on machine learning, I've
+            completed projects implementing ML from scratch, incorporating deep
+            learning techniques and web scraping. My proficiency extends to
+            full-stack web development, demonstrated through various MERN stack
+            projects. Over 2+ years, I've cultivated skills in Data Structures
+            and Algorithms through platforms like LeetCode and GeeksforGeeks.
+            Excited to collaborate on innovative projects in full-stack web
+            development, data analysis, and ML, I'm actively seeking job
+            opportunities in these domains.
           </div>
         </div>
         <div
@@ -43,17 +44,11 @@ function About() {
           <div className="flex flex-col space-y-3  group-hover:text-white font-alegreya">
             <span>Name</span>
             <span>Email</span>
-            <span>Date of Birth</span>
-            <span>High School</span>
-            <span>Intermediate</span>
             <span>Graduation</span>
           </div>
           <div className="flex flex-col space-y-3 group-hover:text-white font-alegreya">
             <span className="w-[15rem]">: Harshit Shukla</span>
-            <span className="w-[15rem]">: hharshit2112@gmail.com</span>
-            <span className="w-[15rem] oldstyle-nums">: 16 Feb, 2000</span>
-            <span className="w-[15rem] oldstyle-nums">: 2015-2016</span>
-            <span className="w-[15rem] oldstyle-nums">: 2017-2018</span>
+            <span className="w-[15rem]">: hharshit8118@gmail.com</span>
             <span className="w-[15rem] oldstyle-nums">
               : BTech-Computer Science and Engineering (2020-2024)
             </span>
@@ -67,7 +62,7 @@ function About() {
       <div className="text-center h-16 pt-6 text-sm text-white bg-slate-800 tracking-widest">
         <FA icon={faCopyright} /> &nbsp;Harshit Shukla{" "}
         <span className="min-w-[16rem] pl-10 text-xs oldstyle-nums">
-          last updated: 16/11/2023
+          last updated: 07/02/2024
         </span>
       </div>
     </>

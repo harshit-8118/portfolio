@@ -5,10 +5,10 @@ import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
 import Header from "./components/Header";
 import TlLanguage from "./components/TlLanguage";
-import TlDevelopment from "./components/TlDevelopment";
 import TlDatabase from "./components/TlDatabase";
 import TlTools from "./components/TlTools";
 import TlToolsTechs from "./components/TlToolsTechs";
+import DevFramework from "./components/DevFramework";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}>
             <Route path="home/languages" element={<TlLanguage />} />
-            <Route path="home/dev-techs" element={<TlDevelopment />} />
+            <Route path="home/dev-techs" element={<DevFramework />} />
             <Route path="home/dbs-techs" element={<TlDatabase />} />
             <Route path="home/tools" element={<TlTools />} />
             <Route path="/" element={<TlToolsTechs />} />
