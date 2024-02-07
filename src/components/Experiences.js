@@ -1,19 +1,21 @@
 // Geeks for Geeks
 const gfg = {
-  organisation: 'Geeks For Geeks',
-  role: 'Technical Content Writer',
-  start_date: 'DEC 2023',
-  end_date: 'Present',
-  working: "Improving Data Structure and Competitive Programming articles, Contributing code, and Debugging Practice Problems. Submitted articles for Database Queries and Advance Machine Learning topic Data Pipelining."
-}
+  organisation: "Geeks For Geeks",
+  role: "Technical Content Writer",
+  start_date: "DEC 2023",
+  end_date: "Present",
+  working:
+    "Improving Data Structure and Competitive Programming articles, Contributing code, and Debugging Practice Problems. Submitted articles for Database Queries and Advance Machine Learning topic Data Pipelining.",
+};
 // Healing Dove Foundation
 const hdf = {
-  organisation: 'Healing Dove Foundation',
-  role: 'Web Developer Intern',
-  start_date: 'JULY 2023',
-  end_date: 'SEPT 2023',
-  working: "Managed Blog website in 2 month internship, overseeing over 40 bugs in designing, restructuring, and proposed contact page. Worked with admin-panel of the website to propose new changes onto the website and documented new changes."
-}
+  organisation: "Healing Dove Foundation",
+  role: "Web Developer Intern",
+  start_date: "JULY 2023",
+  end_date: "SEPT 2023",
+  working:
+    "Managed Blog website in 2 month internship, overseeing over 40 bugs in designing, restructuring, and proposed contact page. Worked with admin-panel of the website to propose new changes onto the website and documented new changes.",
+};
 
 function Experience() {
   return (

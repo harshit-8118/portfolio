@@ -18,7 +18,7 @@ const Popup = (props) => {
           {project_name}
         </h1>
         <span className="mt-[.25rem] hover:-translate-y-1">
-          <a href={git_link} target="_blank">
+          <a href={git_link} target="_blank" rel="noreferrer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1.3em"
@@ -67,7 +67,7 @@ const Popup = (props) => {
             <div
               key={img}
               className={`hover:opacity-100 opacity-80 transition-all duration-200 ${
-                ind % 2 == 0 ? "-skew-x-3" : "skew-x-3"
+                ind % 2 === 0 ? "-skew-x-3" : "skew-x-3"
               } hover:skew-x-0 popImagesimg z-30 border`}
             >
               <p className="text-center oldstyle-nums font-darum text-white bg-[#1d2026]">

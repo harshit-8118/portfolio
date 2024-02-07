@@ -12,7 +12,7 @@ const Service_id = "service_y02x4mu",
 const Emailing = () => {
   const FormRef = useRef();
   const [clicked, setclicked] = useState(false);
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
   const sendEmail = (e) => {
     emailjs.sendForm(Service_id, Template_id, e, Public_id).then(
       (result) => {
@@ -33,13 +33,13 @@ const Emailing = () => {
       e.sender_email.value === "" ||
       e.sender_message.value === ""
     ) {
-      setMessage("input fields can't be empty")
+      setMessage("input fields can't be empty");
       return false;
     } else if (/\S+@\S+\.\S+/.test(e.sender_email.value) === false) {
-      setMessage('invalid email')
+      setMessage("invalid email");
       return false;
     } else if (e.sender_message.value.length < 20) {
-      setMessage('message is too short...')
+      setMessage("message is too short...");
       return false;
     } else {
       return true;
@@ -56,7 +56,7 @@ const Emailing = () => {
         <ContactForm ref={FormRef} />
         {/* check on higher need, very-limited-email-options. */}
         <div className="mx-4 rounded-lg">
-          <PopMessage message={message}/>
+          <PopMessage message={message} />
         </div>
         <button
           className="font-roboto m-1 my-2 bg-gradient-to-b from-[#71ded1] transition-all duration-700 hover:to-[#16867a] to-[#289689] p-2 md:p-4 text-white uppercase font-bold tracking-widest block border rounded-3xl w-[99%]"
@@ -64,7 +64,7 @@ const Emailing = () => {
           onClick={(e) => {
             e.preventDefault();
             if (checkForm(FormRef.current)) {
-              setMessage('')
+              setMessage("");
               setclicked(true);
               sendEmail(FormRef.current);
             }
@@ -87,11 +87,12 @@ export default Emailing;
 const PopMessage = ({ message }) => {
   return (
     <>
-    {
-      message && <div className="rounded-lg bg-[#1d2026] text-center text-red-500 font-alegreya text-base">
-      <>* </>{message}   
-      </div>
-    }
+      {message && (
+        <div className="rounded-lg bg-[#1d2026] text-center text-red-500 font-alegreya text-base">
+          <>* </>
+          {message}
+        </div>
+      )}
     </>
   );
 };

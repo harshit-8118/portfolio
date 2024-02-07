@@ -10,7 +10,8 @@ import {
   faShield,
 } from "@fortawesome/free-solid-svg-icons";
 
-const resumeLink = "https://drive.google.com/file/d/1BAjMLeTVoz2GF0CHc0JU7xMJxQ7sGkGA/view?usp=sharing";
+const resumeLink =
+  "https://drive.google.com/uc?export=download&id=1BAjMLeTVoz2GF0CHc0JU7xMJxQ7sGkGA";
 
 function Header() {
   return (
@@ -20,7 +21,7 @@ function Header() {
         className="header flex justify-center h-32 items-center top-0 z-50 opacity-100 transition-all duration-300 fixed w-[100%] min-w-[10rem]"
       >
         <div className="p-2 ml-4 transition-all duration-300 group hover:border">
-          <a target="_blank" href={resumeLink}>
+          <a target="_self" rel="noreferrer" href={resumeLink}>
             <FA icon={faFileArrowDown} shake className="faIcons" />
             <p className="inline text-sm font-diphel group-hover:text-[#166e64]">
               Resume
@@ -63,7 +64,10 @@ function Header() {
             </Link>
           </div>
         </div>
-        <div id="header-right" className="mr-0 xms:mr-2 mt-20 xsm:mt-0 flex flex-col xsm:flex xsm:flex-row">
+        <div
+          id="header-right"
+          className="mr-0 xms:mr-2 mt-20 xsm:mt-0 flex flex-col xsm:flex xsm:flex-row"
+        >
           <div className="inline hover:border transition-all duration-300 p-2 group">
             <a className="" href={"/#skills"}>
               <FA

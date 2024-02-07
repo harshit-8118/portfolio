@@ -6,182 +6,184 @@
 @layer base {}
 
 @layer components {
-    .header{
+    .header {
         @apply md:h-14 lg:h-8 lg:bg-[#46AEA2]
     }
-    .header .faIcons{
-        @apply px-1 h-4 w-4 lg:h-5 lg:w-5 
-    }
-    .header .page-links{
-        @apply space-x-0 xsx:space-x-1 md:space-x-4
-    }
-    .header .page-links p, #header-right p{
-        @apply font-alegreya
-    }
-    #header-right {
-        @apply  space-x-0 md:space-x-4 overflow-hidden
+
+    .header .faIcons {
+        @apply px-1 h-4 w-4 lg:h-5 lg:w-5
     }
 
-    
-    .landing-page{
-        @apply h-[20rem] 
-        xss:h-[26rem]
-        xsm:h-[28rem] 
-        lg:h-[32rem] lg:max-h-[32rem] 
-        min-h-[15rem] 
-        flex justify-evenly items-center 
-        z-40 
-        overflow-hidden 
-        bg-[#46AEA2]
+    .header .page-links {
+        @apply space-x-0 xsx:space-x-1 md:space-x-4
     }
-    .landing-page .landingDesc{
+
+    .header .page-links p, #header-right p {
+        @apply font-alegreya
+    }
+
+    #header-right {
+        @apply space-x-0 md:space-x-4 overflow-hidden
+    }
+
+
+    .landing-page {
+        @apply h-[20rem] xss:h-[26rem] xsm:h-[28rem] lg:h-[32rem] lg:max-h-[32rem] min-h-[15rem] flex justify-evenly items-center z-40 overflow-hidden bg-[#46AEA2]
+    }
+
+    .landing-page .landingDesc {
         @apply text-white z-40 p-2 xss:p-8 xss:leading-[1.5rem] md:leading-[2.5rem] leading-[1rem] lg:leading-[3rem]
     }
-    .landing-page .desc-heading{ 
-        @apply font-bold font-righteous tracking-widest
-        text-[1.5rem]
-        xss:text-[2rem]
-        xsm:text-[2rem]
-        sm:text-[3rem]
-        md:text-[3.7rem]
+
+    .landing-page .desc-heading {
+        @apply font-bold font-righteous tracking-widest text-[1.5rem] xss:text-[2rem] xsm:text-[2rem] sm:text-[3rem] md:text-[3.7rem]
     }
-    .landing-page .desc-para{
-        @apply font-semibold font-asmatic float-right tracking-widest mt-1
-        text-[1rem]
-        xss:text-[1.5rem]
-        sm:text-[2.2rem] sm:mt-3
-        md:text-[2.7rem]
+
+    .landing-page .desc-para {
+        @apply font-semibold font-asmatic float-right tracking-widest mt-1 text-[1rem] xss:text-[1.5rem] sm:text-[2.2rem] sm:mt-3 md:text-[2.7rem]
     }
 
     .ttnavigation {
-        @apply flex justify-center m-2 space-x-1 my-8
-        xss:space-x-2 xss:m-6
-        sm:space-x-6
+        @apply flex justify-center m-2 space-x-1 my-8 xss:space-x-2 xss:m-6 sm:space-x-6
     }
-    #skills{
+
+    #skills {
         @apply bg-[#1D2026] text-white pt-8 pb-4
     }
+
     .ttheading {
         @apply font-roboto
     }
-    .ttnavigation .tticons{
-        @apply text-center text-white
-        flex-wrap w-[3.5rem] text-[0.5rem] space-x-[.5rem]
-        xss:flex-wrap xss:w-[4rem] xss:text-xs xss:space-x-[.15rem]
-        xsm:w-[6rem] xsm:text-sm xsm:p-0 xsm:space-x-1 xsm:flex-nowrap
-        sm:w-[8rem] sm:text-base sm:p-1 sm:space-x-1
-        md:w-[10rem] md:text-xl md:p-2 md:space-x-2
-        transition-all duration-500 hover:scale-[1.25]
+
+    .ttnavigation .tticons {
+        @apply text-center text-white flex-wrap w-[3.5rem] text-[0.5rem] space-x-[.5rem] xss:flex-wrap xss:w-[4rem] xss:text-xs xss:space-x-[.15rem] xsm:w-[6rem] xsm:text-sm xsm:p-0 xsm:space-x-1 xsm:flex-nowrap sm:w-[8rem] sm:text-base sm:p-1 sm:space-x-1 md:w-[10rem] md:text-xl md:p-2 md:space-x-2 transition-all duration-500 hover:scale-[1.25]
     }
+
     .ttoutlet {
-        @apply border border-white hover:bg-[#46AEA2] transition-all duration-700 ease-in-out
-        text-center p-4 max-h-max m-4 rounded-lg hover:bg-gradient-to-r from-[#7ce7db] to-[#055959]
+        @apply border border-white hover:bg-[#46AEA2] transition-all duration-700 ease-in-out text-center p-4 max-h-max m-4 rounded-lg hover:bg-gradient-to-r from-[#7ce7db] to-[#055959]
     }
+
     .ttoutlet_exp {
-        @apply border border-white bg-[#46AEA2] transition-all duration-700 ease-in-out
-        text-center p-4 max-h-max m-4 rounded-lg hover:bg-gradient-to-r from-[#7ce7db] to-[#055959]
+        @apply border border-white bg-[#46AEA2] transition-all duration-700 ease-in-out text-center p-4 max-h-max m-4 rounded-lg hover:bg-gradient-to-r from-[#7ce7db] to-[#055959]
     }
+
     .ToolLanguages, .ToolTechs {
-        @apply  flex flex-col list-none m-2 space-y-3 justify-center xxs:w-auto
-    } 
+        @apply flex flex-col list-none m-2 space-y-3 justify-center xxs:w-auto
+    }
+
     .ToolDatabase {
         @apply flex flex-col list-none w-auto h-auto overflow-hidden m-2 space-y-3
     }
+
     .ToolDevelopment {
-        @apply flex flex-col justify-center list-none w-auto h-auto m-2 space-y-2 
+        @apply flex flex-col justify-center list-none w-auto h-auto m-2 space-y-2
     }
 
 
     .projectContainer {
         @apply border flex justify-center flex-wrap min-w-[15rem]
     }
-    .projectContainer .projectCard{
-        @apply border border-[#f2f2f2] p-1 m-4 rounded-3xl
-        space-y-0 relative flex flex-col
+
+    .projectContainer .projectCard {
+        @apply border border-[#f2f2f2] p-1 m-4 rounded-3xl space-y-0 relative flex flex-col
     }
-    .projectContainer .projectCard .cardBody{
-        @apply border-b-2 border-[#46AEA2] mb-2 bg-[#1D2026] group-hover:text-[#1D2026] rounded-t-3xl 
-        
+
+    .projectContainer .projectCard .cardBody {
+        @apply border-b-2 border-[#46AEA2] mb-2 bg-[#1D2026] group-hover:text-[#1D2026] rounded-t-3xl
     }
-    .projectContainer .projectCard .cardBodyBottom{
-        @apply border-y  max-w-[22rem] h-44 mb-2 bg-[#1d2026] rounded-b-3xl text-white  overflow-hidden
-        
+
+    .projectContainer .projectCard .cardBodyBottom {
+        @apply border-y max-w-[22rem] h-44 mb-2 bg-[#1d2026] rounded-b-3xl text-white overflow-hidden
     }
-    .projectContainer .projectCard .cardTechsMain{
-        @apply flex list-none space-x-4 text-sm
-        xxs:text-sm 
+
+    .projectContainer .projectCard .cardTechsMain {
+        @apply flex list-none space-x-4 text-sm xxs:text-sm
     }
-    .projectContainer .projectCard .cardTechsOther{
-        @apply flex list-none text-sm space-x-4 
+
+    .projectContainer .projectCard .cardTechsOther {
+        @apply flex list-none text-sm space-x-4
     }
-    .projectContainer .projectCard .cardDesc{
-        @apply mx-auto p-2 w-auto tracking-tight leading-5 text-center break-words font-roboto
-        xsm:w-96 overflow-hidden indent-4 
+
+    .projectContainer .projectCard .cardDesc {
+        @apply mx-auto p-2 w-auto tracking-tight leading-5 text-center break-words font-roboto xsm:w-96 overflow-hidden indent-4
     }
-    .cardDescLinks{
-        @apply flex space-x-2 justify-start 
+
+    .cardDescLinks {
+        @apply flex space-x-2 justify-start
     }
 
 
     #popup {
-        @apply fixed top-24 z-50 overflow-auto rounded-xl 
-        w-[90%] h-[80%] bg-gradient-to-b from-[#1D2026] to-[#f2f2f2] shadow-2xl shadow-white
+        @apply fixed top-24 z-50 overflow-auto rounded-xl w-[90%] h-[80%] bg-gradient-to-b from-[#1D2026] to-[#f2f2f2] shadow-2xl shadow-white
     }
+
     .popHeading {
         @apply space-x-4 flex justify-center border-b-2 border-black bg-[#f2f2f2] h-16 pt-4
     }
+
     .poptoolTechs {
         @apply flex list-none flex-wrap space-x-6 m-2
     }
-    .poptoolTechs li{
-        @apply border rounded-lg px-1 text-base text-white
-        sm:px-2 sm:py-1 md:text-lg bg-[#05a996] transition-all ease-in-out duration-150 hover:bg-[#158f81]
+
+    .poptoolTechs li {
+        @apply border rounded-lg px-1 text-base text-white sm:px-2 sm:py-1 md:text-lg bg-[#05a996] transition-all ease-in-out duration-150 hover:bg-[#158f81]
     }
+
     .popDesc {
         @apply text-sm border-slate-400 border m-2 md:m-4 bg-white p-2 rounded-xl indent-8 whitespace-pre-wrap font-pathway
     }
+
     #popImages {
         @apply object-fill w-[80%] mx-auto overflow-hidden
     }
-    .popImagesimg{
-        @apply  my-4 w-[95%] mx-auto
+
+    .popImagesimg {
+        @apply my-4 w-[95%] mx-auto
     }
-    .popImagesimg img{
-        @apply mx-auto 
+
+    .popImagesimg img {
+        @apply mx-auto
     }
 
 
-    #achievementContainer{
-        @apply flex flex-col justify-center flex-wrap mx-auto my-24 py-4 divide-y divide-[#46AEA2] border-y-8 border-[#3c887f] rounded-[5rem] 
+    #achievementContainer {
+        @apply flex flex-col justify-center flex-wrap mx-auto my-24 py-4 divide-y divide-[#46AEA2] border-y-8 border-[#3c887f] rounded-[5rem]
     }
-    .achiCard{
+
+    .achiCard {
         @apply flex flex-wrap justify-center lg:space-x-10 my-2
     }
-    .achiImg{
+
+    .achiImg {
         @apply border border-cyan-300 rounded-lg overflow-hidden self-center
     }
-    .achiImg img{
-        @apply mx-auto max-w-[12rem] max-h-[12rem]  rounded-lg
+
+    .achiImg img {
+        @apply mx-auto max-w-[12rem] max-h-[12rem] rounded-lg
     }
+
     .achiLower {
         @apply border border-white self-center flex flex-col space-y-[0.1rem] divide-y text-slate-800 text-sm w-[15.9rem]
     }
+
     .achiPlatform {
         @apply h-10 p-1 text-center text-lg
     }
 
 
-    #photo-about{
+    #photo-about {
         @apply border border-white bg-[#1d2026] rounded-[3rem]
     }
-    #about-img{
-        @apply border-white border w-[10rem] h-[10rem] rounded-full overflow-hidden p-1 my-2
-        xss:w-[14rem] xss:h-[14rem]
+
+    #about-img {
+        @apply border-white border w-[10rem] h-[10rem] rounded-full overflow-hidden p-1 my-2 xss:w-[14rem] xss:h-[14rem]
     }
-    #about-desc{
+
+    #about-desc {
         @apply m-1 text-xs tracking-wide leading-5 xss:text-sm min-w-[16rem] max-w-[26rem] rounded-[3rem] p-2 text-white font-diphel
     }
-    #about-card{
+
+    #about-card {
         @apply border-2 overflow-x-auto border-[#46aea2] w-auto min-w-[16rem] max-w-[24rem] flex space-x-4 p-4 h-fit rounded-[3rem]
     }
 
@@ -189,26 +191,22 @@
     #form {
         @apply m-1
     }
+
     #form input {
-        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#46aea2] m-1 py-2 md:py-3 px-4 tracking-wide font-semibold text-[10px] md:text-[15px] text-white bg-[#333539] font-roboto
-        focus:outline-none focus:tracking-widest
-        placeholder:text-slate-400 placeholder:font-semibold placeholder:tracking-widest
+        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#46aea2] m-1 py-2 md:py-3 px-4 tracking-wide font-semibold text-[10px] md:text-[15px] text-white bg-[#333539] font-roboto focus:outline-none focus:tracking-widest placeholder:text-slate-400 placeholder:font-semibold placeholder:tracking-widest
     }
+
     #form textarea {
-        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#46aea2] m-1 py-2 md:py-3 px-4 tracking-wide font-semibold text-[10px] md:text-[15px] resize-y min-h-[6rem] bg-[#333539] font-roboto
-        focus:outline-none  focus:tracking-widest text-white
-        placeholder:text-slate-400 placeholder:font-semibold placeholder:tracking-widest
+        @apply border-b-2 rounded-b-3xl rounded-t-2xl border-b-[#46aea2] m-1 py-2 md:py-3 px-4 tracking-wide font-semibold text-[10px] md:text-[15px] resize-y min-h-[6rem] bg-[#333539] font-roboto focus:outline-none focus:tracking-widest text-white placeholder:text-slate-400 placeholder:font-semibold placeholder:tracking-widest
     }
-    
+
 
 
 
     .footer-links {
         @apply text-slate-600 hover:text-slate-800 hover:underline decoration-slate-400 font-thin
     }
-   
+
 }
 
-@layer utilities {
-    
-}
+@layer utilities {}

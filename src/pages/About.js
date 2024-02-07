@@ -19,7 +19,7 @@ function About() {
           className="flex flex-col justify-center photo-about border m-2"
         >
           <div id="about-img" className="mx-auto">
-            <img src={myphoto} />
+            <img src={myphoto} alt="img.jpg" />
           </div>
           <div id="about-desc" className="about-desc whitespace-pre-wrap">
             Greetings! I'm Harshit Shukla, a final-year Computer Science and

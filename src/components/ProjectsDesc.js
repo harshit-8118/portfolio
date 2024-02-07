@@ -162,7 +162,6 @@ export const projects = [
       "React.js",
       "Node.js",
       "SASS",
-      ,
       "Firebase",
     ],
     other_techs: ["JWT authorization"],

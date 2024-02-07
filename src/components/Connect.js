@@ -9,6 +9,7 @@ function Connect() {
         data-aos-delay="200"
         data-aos-duration="250"
         target="_blank"
+        rel="noreferrer"
         href="https://twitter.com/Harshit_8118"
         className="hover:bg-slate-300 p-2 h-[2.5rem] bg-slate-400 rounded-full"
       >
@@ -25,6 +26,7 @@ function Connect() {
         data-aos-delay="150"
         data-aos-duration="200"
         target="_blank"
+        rel="noreferrer"
         href="https://www.facebook.com/hharshit8118"
         className="hover:bg-slate-300 p-2 h-[2.3rem] bg-slate-400 rounded-full"
       >
@@ -41,6 +43,7 @@ function Connect() {
         data-aos-delay="100"
         data-aos-duration="150"
         target="_blank"
+        rel="noreferrer"
         href="https://www.linkedin.com/in/harshit-shukla-079952203/"
         className="hover:bg-slate-300 p-2 h-[2.3rem] bg-slate-400 rounded-full"
       >
@@ -57,6 +60,7 @@ function Connect() {
         data-aos-delay="50"
         data-aos-duration="100"
         target="_blank"
+        rel="noreferrer"
         href="https://wa.me/919450929272"
         className="hover:bg-slate-300 p-2 h-[2.3rem] bg-slate-400 rounded-full"
       >
@@ -72,6 +76,7 @@ function Connect() {
         data-aos="fade-up"
         data-aos-duration="100"
         target="_blank"
+        rel="noreferrer"
         href="https://github.com/harshit-8118"
         className="hover:bg-slate-300 p-2 h-[2.3rem] bg-slate-400 rounded-full"
       >

@@ -12,7 +12,7 @@ function Projects() {
   const [hidden, setHidden] = useState("hidden");
 
   const popOpen = () => {
-    if (hidden == "hidden") {
+    if (hidden === "hidden") {
       setHidden("");
     } else {
       setHidden("hidden");
@@ -30,7 +30,6 @@ function Projects() {
         <div className="animate-pulse w-12 translate-y-7 lg:w-20 lg:translate-y-10 translate-x-2 -rotate-45 text-center z-50 border-2 border-black group-hover:animate-none group-hover:border-white"></div>
       </div>
       <div
-        id=""
         data-aos="fade-up"
         className=" text-center text-3xl font-alegreya font-bold tracking-[0.5rem] py-8"
       >
@@ -45,7 +44,7 @@ function Projects() {
         <Popup data={data} hidden={hidden} />
         {projects.map((project, ind) => (
           <div
-            data-aos={ind % 2 == 0 ? "fade-up-right" : "fade-up-left"}
+            data-aos={ind % 2 === 0 ? "fade-up-right" : "fade-up-left"}
             data-aos-duration="400"
             key={ind}
             className="projectCard group"
@@ -55,12 +54,13 @@ function Projects() {
                 {project.project_name}
               </h1>
               <div
-                data-aos={ind % 2 == 0 ? "zoom-out-right" : "zoom-out-left"}
+                data-aos={ind % 2 === 0 ? "zoom-out-right" : "zoom-out-left"}
                 className="cardDescLinks"
               >
                 <a
                   href={project.git_link}
                   target="_blank"
+                  rel="noreferrer"
                   className="mt-[.13rem] bg-white rounded-full p-[.10rem]"
                 >
                   <svg

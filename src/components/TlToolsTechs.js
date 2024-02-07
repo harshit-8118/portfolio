@@ -2,7 +2,7 @@ import TlLanguage from "./TlLanguage";
 import TlDevelopment from "./TlDevelopment";
 import TlDatabase from "./TlDatabase";
 import TlTools from "./TlTools";
-import TlFrameworks_Libraries from "./TlFrameworks&Libraries";
+import TlFrameworksLibraries from "./TlFrameworks&Libraries";
 
 function TlToolsTechs() {
   return (
@@ -14,7 +14,7 @@ function TlToolsTechs() {
         <TlDevelopment />
       </div>
       <div className="ToolDevelopment">
-        <TlFrameworks_Libraries />
+        <TlFrameworksLibraries />
       </div>
       <div className="ToolDatabase">
         <TlDatabase />

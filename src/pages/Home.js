@@ -12,9 +12,9 @@ function Home() {
   return (
     <div id="top" className="overflow-hidden w-[100%]">
       <div className="w-[100%]">
-      <Landing />
+        <Landing />
       </div>
-     <div className="h-[6rem]"></div>
+      <div className="h-[6rem]"></div>
       <Underline />
       <div id="skills" className="">
         <Experience />
@@ -23,9 +23,9 @@ function Home() {
       <div id="skills" className="">
         <ToolTechnology />
       </div>
-       <Underline />
+      <Underline />
       <div id="projects" className="">
-      <Projects />
+        <Projects />
       </div>
       <Underline />
       <Achievements />

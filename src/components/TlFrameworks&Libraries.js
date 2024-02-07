@@ -11,7 +11,7 @@ const frame_libs = [
   "seaborn",
 ];
 
-function TlFrameworks_Libraries() {
+function TlFrameworksLibraries() {
   return (
     <div className="ToolDevelopment">
       <h1 className="text-base xxs:text-xl group-hover:text-[#004b4b] font-bold font-alegreya">
@@ -35,4 +35,4 @@ function TlFrameworks_Libraries() {
   );
 }
 
-export default TlFrameworks_Libraries;
+export default TlFrameworksLibraries;
